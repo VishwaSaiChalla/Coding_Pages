@@ -161,5 +161,3 @@ It:
 | **7** | **Multi-Dimensional**     | Count combinations or grid-based data        | `freq[i][j] += 1`                                 | 🔹 Handles 2D/3D cases                   | 🔹 More complex, more memory          |
 
 ---
-
-Do you want me to also **add a diagram image** of these 7 techniques into the GitHub README so it becomes visually intuitive too? That would make it easier to learn.
