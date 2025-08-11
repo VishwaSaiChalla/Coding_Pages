@@ -1,4 +1,5 @@
-Concept For **Non-Divisible Subset**
+# Concept For **Non-Divisible Subset**
+
 The **frequency list** (also called a frequency array or count array) is a common pattern in competitive programming and data analysis.
 It’s basically about **counting how often each item, value, or category appears** — but there are different techniques depending on the data and constraints.
 
@@ -18,6 +19,8 @@ arr = [1, 2, 2, 3, 1]
 freq = [0] * 4  # for numbers 0..3
 for x in arr:
     freq[x] += 1
+print(freq)
+# ans: [0, 2, 2, 1]
 ```
 
 ✅ Very fast (O(1) updates)
@@ -36,6 +39,8 @@ Example:
 from collections import Counter
 arr = ["apple", "banana", "apple", "orange"]
 freq = Counter(arr)
+print(freq)
+# ans: Counter({'apple': 2, 'banana': 1, 'orange': 1})
 ```
 
 ✅ Flexible for any data type
@@ -68,9 +73,13 @@ freq = [0, 2, 5, 7, 9]  # cumulative counts
 Example:
 
 ```python
+arr = [1, 2, 2, 3, 1]
+k = 3
 cnt = [0] * k
 for x in arr:
     cnt[x % k] += 1
+print(cnt)
+# ans: [1, 3, 1]
 ```
 
 ✅ Great for problems involving divisibility or grouping
@@ -131,7 +140,7 @@ freq = [[0]*m for _ in range(n)]  # 2D frequency table
 
 ---
 
-## In your code
+## **In your code**
 
 The **technique used** is **Modulo-based Buckets** (#4 above) combined with **Direct Indexing** (#1).
 It:
@@ -151,4 +160,6 @@ It:
 | **6** | **Boolean Frequency**     | Only need “exists or not” info               | `seen[x] = True`                                  | 🔹 Saves memory 🔹 Fast checks           | 🔹 No actual counts stored            |
 | **7** | **Multi-Dimensional**     | Count combinations or grid-based data        | `freq[i][j] += 1`                                 | 🔹 Handles 2D/3D cases                   | 🔹 More complex, more memory          |
 
+---
 
+Do you want me to also **add a diagram image** of these 7 techniques into the GitHub README so it becomes visually intuitive too? That would make it easier to learn.
