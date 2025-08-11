@@ -1,0 +1,154 @@
+Concept For **Non-Divisible Subset**
+The **frequency list** (also called a frequency array or count array) is a common pattern in competitive programming and data analysis.
+It’s basically about **counting how often each item, value, or category appears** — but there are different techniques depending on the data and constraints.
+
+Here’s a breakdown of **different frequency list techniques**:
+
+---
+
+## **1️⃣ Direct Indexing Frequency Array**
+
+**When:** The values are **small integers in a known range** (e.g., 0–k-1).
+**Idea:** Create a list of size `max_value+1` and increment counts directly.
+
+Example:
+
+```python
+arr = [1, 2, 2, 3, 1]
+freq = [0] * 4  # for numbers 0..3
+for x in arr:
+    freq[x] += 1
+```
+
+✅ Very fast (O(1) updates)
+❌ Uses memory proportional to range size, not number of elements.
+
+---
+
+## **2️⃣ Using `collections.Counter`**
+
+**When:** The values can be **large, sparse, or not just integers** (strings, tuples, etc.).
+**Idea:** A dictionary behind the scenes that maps values to counts.
+
+Example:
+
+```python
+from collections import Counter
+arr = ["apple", "banana", "apple", "orange"]
+freq = Counter(arr)
+```
+
+✅ Flexible for any data type
+❌ Slightly slower and more memory overhead than arrays.
+
+---
+
+## **3️⃣ Prefix Sum Frequency (Cumulative Counts)**
+
+**When:** You need to **query counts in a range** quickly.
+**Idea:** Build a prefix sum of frequencies to answer queries in O(1).
+
+Example:
+
+```python
+freq = [0, 2, 5, 7, 9]  # cumulative counts
+# number of items in range [l, r] = freq[r] - freq[l-1]
+```
+
+✅ Fast range queries
+❌ Needs preprocessing.
+
+---
+
+## **4️⃣ Modulo-based Buckets**
+
+**When:** Group items based on their remainder (like your `cnt[x % k]`).
+**Idea:** Instead of counting exact values, count by category/modulus.
+
+Example:
+
+```python
+cnt = [0] * k
+for x in arr:
+    cnt[x % k] += 1
+```
+
+✅ Great for problems involving divisibility or grouping
+❌ Loses information about individual numbers.
+
+---
+
+## **5️⃣ Difference Array Technique**
+
+**When:** You need to apply **range updates** quickly and later compute actual frequencies.
+**Idea:** Store only the changes in frequency at the start and end of a range, then do a prefix sum to get actual counts.
+
+Example:
+
+```python
+diff = [0] * (n+1)
+diff[l] += 1
+diff[r+1] -= 1
+# Later prefix sum over diff to get frequencies
+```
+
+✅ Efficient for batch updates
+❌ Requires final prefix sum pass.
+
+---
+
+## **6️⃣ Bitwise/Boolean Frequency Lists**
+
+**When:** You only care whether something exists or not (frequency is 0 or >0).
+**Idea:** Store `True`/`False` instead of exact counts.
+
+Example:
+
+```python
+seen = [False] * (max_value+1)
+for x in arr:
+    seen[x] = True
+```
+
+✅ Saves memory if exact counts aren’t needed
+❌ Can’t retrieve exact frequency.
+
+---
+
+## **7️⃣ Multi-dimensional Frequency Lists**
+
+**When:** You need to count combinations (pairs, tuples, 2D data).
+**Idea:** Use nested lists or dicts.
+
+Example:
+
+```python
+freq = [[0]*m for _ in range(n)]  # 2D frequency table
+```
+
+✅ Useful for grids, chessboards, etc.
+❌ More memory and complexity.
+
+---
+
+## In your code
+
+The **technique used** is **Modulo-based Buckets** (#4 above) combined with **Direct Indexing** (#1).
+It:
+
+* Groups numbers by `remainder % k`
+* Stores frequencies in a fixed-size list for fast lookup
+
+---
+
+| **#** | **Technique**             | **When to Use**                              | **Example**                                       | **Pros**                                 | **Cons**                              |
+| ----- | ------------------------- | -------------------------------------------- | ------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
+| **1** | **Direct Indexing Array** | Values are small integers in a known range   | `freq = [0] * (max_val+1)` → increment `freq[x]`  | 🔹 Fast O(1) access 🔹 Simple            | 🔹 Wastes memory if range is large    |
+| **2** | **`collections.Counter`** | Values can be large, sparse, or non-integers | `freq = Counter(arr)`                             | 🔹 Works with any type 🔹 Clean syntax   | 🔹 Slower than list indexing          |
+| **3** | **Prefix Sum Frequency**  | Need to query counts in ranges               | Build `prefix[i] = prefix[i-1] + freq[i]`         | 🔹 O(1) range queries                    | 🔹 Requires preprocessing             |
+| **4** | **Modulo Buckets**        | Group by remainder or category               | `cnt[x % k] += 1`                                 | 🔹 Ideal for divisibility/group problems | 🔹 Loses info about exact values      |
+| **5** | **Difference Array**      | Many range updates before queries            | `diff[l] += 1; diff[r+1] -= 1` → prefix sum later | 🔹 Very fast updates                     | 🔹 Must compute prefix sum at the end |
+| **6** | **Boolean Frequency**     | Only need “exists or not” info               | `seen[x] = True`                                  | 🔹 Saves memory 🔹 Fast checks           | 🔹 No actual counts stored            |
+| **7** | **Multi-Dimensional**     | Count combinations or grid-based data        | `freq[i][j] += 1`                                 | 🔹 Handles 2D/3D cases                   | 🔹 More complex, more memory          |
+
+
