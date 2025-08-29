@@ -1,0 +1,64 @@
+def queensAttack(n, k, r_q, c_q, obstacles):
+    # No Obstacles
+    # row and column wise values
+    left = c_q-1
+    right = n-c_q
+    down = r_q-1
+    up = n-r_q
+    
+    # diagonal values
+    upleft = left if left<up else up
+    upright = right if right<up else up
+    downleft = left if left< down else down
+    downright = right if right<down else down
+    
+    for obs in obstacles:
+        row = obs[0]
+        col = obs[1]
+        
+        # condition for left 
+        if row == r_q and col<c_q:
+            if c_q-col-1<left:
+                left=c_q-col-1
+
+        # Condition for right
+        elif row == r_q and col>c_q:
+            if col-c_q-1<right:
+                right = col-c_q-1
+                
+        # Condition for down
+        elif col == c_q and row<r_q:
+            if r_q-row-1<down:
+                down = r_q-row-1
+        
+        # Condition for up 
+        elif col == c_q and row>r_q:
+            if row-r_q-1<up:
+                up = row-r_q-1
+               
+        # diagonal Conditions  
+        # up left side
+        elif col < c_q and row > r_q: 
+            if row - r_q == c_q - col:
+                if row-r_q-1<upleft:
+                    upleft = row-r_q-1
+          
+        # down left  
+        elif col < c_q and row < r_q:
+            if r_q-row == c_q-col:
+                if r_q - row -1 <downleft:
+                    downleft = r_q - row -1
+            
+        #down right
+        elif col > c_q and row < r_q:
+            if col - c_q == r_q-row:
+                if r_q-row -1<downright:
+                    downright = r_q-row -1
+            
+        # up right
+        elif col > c_q and row > r_q:
+            if col-c_q == row - r_q:
+                if row-r_q-1<upright:
+                    upright=row-r_q-1
+    
+    return  up+down+left+right+upleft+upright+downleft+downright
