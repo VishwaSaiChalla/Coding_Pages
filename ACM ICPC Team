@@ -1,0 +1,13 @@
+def acmTeam(topic):
+    # Write your code here
+    subj_count=0
+    count=0
+    for i in range(len(topic)):
+        for j in range(i+1,len(topic)):
+            s=[int(topic[i][k]) or int(topic[j][k]) for k in range(0,len(topic[i]))]
+            if subj_count < s.count(1):
+                subj_count = s.count(1);
+                count=1
+            elif subj_count == s.count(1):
+                count+=1
+    return subj_count,count
