@@ -1,0 +1,26 @@
+def encryption(s):
+    # Write your code here
+    li = s.split(" ")
+    st = "".join(li)
+    st_len = len(st)
+    row_len = math.floor(math.sqrt(st_len))
+    col_len = math.ceil(math.sqrt(st_len))
+    li1 = []
+           
+            
+    for i in range(0,st_len,col_len):
+        if i+col_len>st_len:
+            li1.append(st[i:])
+        else:
+            li1.append(st[i:i+col_len])
+    print(li1)    
+    li2=[]
+    for i in range(0,col_len):
+        s=""
+        for j in (li1):
+            if i<len(j):
+                s+=j[i]
+        li2.append(s)
+        print(li2)
+
+    return " ".join(li2)
