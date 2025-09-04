@@ -1,0 +1,117 @@
+def biggerIsGreater(w):
+    # Write your code here
+    
+    #Optimal Solution
+    li=[w[k] for k in range(0,len(w))]
+    word_len = len(li)
+    index = -1
+    
+    for i in range(word_len-1,0,-1):
+        if li[i-1]<li[i]:
+            index = i-1
+            break
+    
+    if index == -1:
+        return "no answer"
+    
+    for i in range(word_len-1,index,-1):
+        if li[i]>li[index]:
+            temp = li[i]
+            li[i]=li[index]
+            li[index]=temp
+            break
+
+    li_new=li[:index+1]+sorted(li[index+1:])
+    return "".join(li_new)
+            
+    
+    # Brute Force
+    # st_permutations = list(set(permutations(w)))
+    # li=[]
+    # for p in st_permutations:
+    #     li.append("".join(p))
+
+    # li=sorted(li)
+
+    # index = li.index(w)
+    # if index==len(li)-1:
+    #     return "no answer"
+    # else:
+    #     return li[index+1]
+
+BRUTE FORCE HAS High Time Complexity. Use the algorithm below to solve.
+
+**Next Permutation Algorithm**
+---
+
+### **The Goal**
+
+Given a word (or list of characters), find the **next lexicographically larger word**.
+If no such word exists (already the largest), return `"no answer"`.
+
+---
+
+### **Step-by-Step Process**
+
+1. **Find the pivot**
+
+   * Scan the word from right to left.
+   * Look for the first index `i` such that `w[i] < w[i+1]`.
+   * This is the **pivot** — the character we need to “bump up” to get a bigger word.
+   * If no pivot is found, the word is the last permutation → return `"no answer"`.
+
+   ✅ Example: `"dkhc"`
+
+   * Compare `h > c` (yes, but not ascending)
+   * Compare `k < h` → pivot = `k` at index 1.
+
+---
+
+2. **Find the successor**
+
+   * Look to the right of the pivot.
+   * Find the **smallest character that is greater than the pivot**.
+   * This ensures we make the next possible bigger word (not a huge jump).
+
+   ✅ Example: pivot = `k`, suffix = `h c`
+
+   * From right, find `c` (since `c > k`).
+   * Successor = `c`.
+
+---
+
+3. **Swap pivot and successor**
+
+   * Swap these two to “bump up” the pivot.
+
+   ✅ Example: `d k h c` → swap `k` and `c` → `d c h k`.
+
+---
+
+4. **Reverse the suffix**
+
+   * The part after the pivot (suffix) is always in **descending order** (that’s why the pivot was the first “ascending break”).
+   * To get the smallest next word, reverse that suffix into ascending order.
+
+   ✅ Example: suffix = `h k` → reverse → `k h`.
+   Final result = `"hcdk"`.
+
+---
+
+### **Why reverse, not sort?**
+
+* After finding the pivot, the suffix is already in **descending order**.
+* Reversing it makes it ascending in **O(n)** time.
+* Sorting would also work, but it’s slower and unnecessary.
+
+---
+
+### **Summary**
+
+1. Scan from right → find pivot (`li[i] < li[i+1]`).
+2. Find the rightmost successor (`li[j] > li[i]`).
+3. Swap pivot and successor.
+4. Reverse the suffix (`li[i+1:]`).
+5. Done → smallest possible lexicographically bigger word.
+
+---
