@@ -1,0 +1,133 @@
+**Binary Search LowerBound and UpperBound Concept**
+
+** Lower Bound Implementation **
+Given a sorted array of nums and an integer x, write a program to find the lower bound of x.
+The lower bound algorithm finds the first and smallest index in a sorted array where the value at that index is greater than or equal to a given key i.e. x.
+If no such index is found, return the size of the array.
+
+Input : nums= [1,2,2,3], x = 2
+Output:1
+Explanation:
+Index 1 is the smallest index such that arr[1] >= x.
+
+Input : nums= [3,5,8,15,19], x = 9
+Output: 3
+Explanation:
+Index 3 is the smallest index such that arr[3] >= x.
+
+class Solution:
+    def lowerBound(self, nums, x):
+        low=0
+        high = len(nums)-1
+
+        while low<=high:
+            mid= (low+high)//2
+            if nums[mid]>=x:
+                ans = mid
+                high = mid-1
+            else:
+                low=mid+1
+        return ans
+
+** Upper Bound Implementation **
+Given a sorted array of nums and an integer x, write a program to find the upper bound of x.
+The upper bound of x is defined as the smallest index i such that nums[i] > x.
+If no such index is found, return the size of the array.
+
+Input : n= 4, nums = [1,2,2,3], x = 2
+Output:3
+Explanation: Index 3 is the smallest index such that arr[3] > x.
+
+Input : n = 5, nums = [3,5,8,15,19], x = 9
+Output: 3
+Explanation: Index 3 is the smallest index such that arr[3] > x.
+
+class Solution:
+    def upperBound(self, nums, x):
+        low=0
+        high = len(nums)-1
+        ans=-1
+        while low<=high:
+            mid = (low+high)//2
+            if nums[mid]>x:
+                ans = mid
+                high = mid-1
+            else:
+                low = mid+1
+        return ans
+
+** Find First and Last Position of Element in Sorted Array **
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+
+        # Binary Search Fashion code.
+        first=-1
+        last=-1
+        low=0
+        high = len(nums)-1
+        while low<=high:
+            mid = (low+high)//2
+            if nums[mid]==target:
+                first = mid
+                high = mid-1
+            elif target<nums[mid]:
+                high = mid-1
+            else:
+                low = mid+1
+        low=0
+        high = len(nums)-1
+        while low<=high:
+            mid= (low+high)//2
+            if nums[mid]==target:
+                last=mid
+                low=mid+1
+            elif target<nums[mid]:
+                high = mid-1
+            else:
+                low=mid+1
+        return [first,last]
+
+
+
+        # Using LowerBound and UpperBound Concept
+        # def lower_bound(nums,low,high,target):
+        #     ans=high+1
+        #     while low<=high:
+        #         mid= (low+high)//2
+        #         if nums[mid]>=target:
+        #             ans = mid
+        #             high=mid-1
+        #         else:
+        #             low=mid+1
+        #     return ans
+        # def upper_bound(nums,low,high,target):
+        #     ans=high+1
+        #     while low<=high:
+        #         mid=(low+high)//2
+        #         if nums[mid]>target:
+        #             ans=mid
+        #             high = mid-1
+        #         else:
+        #             low=mid+1
+        #     return ans
+
+        # lb = lower_bound(nums,0,len(nums)-1,target)
+        # if (lb == len(nums)) or (nums[lb]!=target):
+        #     return [-1,-1]
+        # else:
+        #     return [lb,upper_bound(nums,0,len(nums)-1,target)-1]
+        
+
+        
+        # Linear Search Fashion.
+        # first=-1
+        # last=-1
+
+        # for i in range(len(nums)):
+        #     if nums[i]==target:
+        #         if first!=-1:
+        #             last = i
+        #         else:
+        #             first = i
+        #             last=i
+        # return [first,last]
