@@ -1,0 +1,61 @@
+Insertion Sort is a simple, comparison-based sorting algorithm that works the same way you sort playing cards in your hand.
+It builds the sorted list one element at a time by inserting each new element into its correct position in the already sorted part.
+
+Steps:
+  Assume the first element is already sorted.
+  Take the next element (called the key).
+  Compare the key with elements in the sorted part (to its left).
+  Shift all elements that are greater than the key one position to the right.
+  Insert the key in its correct position.
+  Repeat until all elements are sorted.
+
+Key Characteristics
+  Time Complexity
+    Best case: O(n) (already sorted)
+    Average case: O(n²)
+    Worst case: O(n²) (reverse sorted)
+  Space Complexity
+    O(1) (in-place)
+  Stability
+    ✅ Stable (preserves order of equal elements)
+  Adaptiveness
+    ✅ Adaptive (efficient for nearly sorted arrays)
+
+  When to use Insertion Sort
+    ✅ Good for:
+      Small datasets
+      Nearly sorted arrays
+      Online sorting (elements arrive one by one)
+    ❌ Not suitable for:
+      Large datasets
+
+Logic 1:
+li = [14,9,15,12,6,8,13]
+
+for i in range(1,len(li)):
+    j=i
+    while j>0:
+        if li[j]<li[j-1]:
+            li[j],li[j-1]=li[j-1],li[j]
+            j-=1
+        else:
+            break
+    print(i,end=" ")
+    print(li)
+print(li)
+
+Logic 2:
+arr = [29,10,14,37,13]
+# arr = [10,13,14,29,37]
+
+n = len(arr)
+
+for i in range(n):
+    key = arr[i]
+    j=i-1
+    while j>=0 and arr[j]>key:
+        arr[j+1] = arr[j]
+        j-=1
+    arr[j+1]=key
+    print('Step:{}-->{}'.format(i+1,arr))
+print(arr)
