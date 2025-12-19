@@ -1,0 +1,53 @@
+**Selection Sort** is a simple, comparison-based sorting algorithm.
+Its idea is to repeatedly select the smallest (or largest) element from the unsorted part of the list and place it in the correct position.
+
+-> Given an array of size n:
+-->Divide the array into two parts:
+    Sorted part (initially empty)
+    Unsorted part (initially the whole array)
+--.For each position i from 0 to n-2:
+    Assume the element at index i is the minimum
+    Scan the remaining unsorted elements (i+1 to n-1)
+    Find the actual minimum element
+    Swap it with the element at index i
+-->Repeat until the entire array is sorted.
+
+# arr = [29,10,14,37,13]
+arr = [10,13,14,29,37]
+
+n = len(arr)
+swap=0
+for i in range(len(arr)-1):
+    index = i
+    for j in range(i+1,len(arr)):
+        if arr[index]>arr[j]:
+            index = j
+            swap+=1
+    arr[i],arr[index] = arr[index],arr[i]
+    print('Step:{} --> {}'.format(i+1,arr))
+    if swap==0:
+        break
+
+print(arr)
+
+# Swap case is to decrease the Time Complexity when there are sorted arrays.
+
+--> Key Characteristics
+Time Complexity
+  Best case: O(n²)
+  Average case: O(n²)
+  Worst case: O(n²)
+Space Complexity
+  O(1) (in-place sorting)
+Stability
+  ❌ Not stable (equal elements may change order)
+Number of Swaps
+  At most n-1 swaps (better than Bubble Sort)
+--> Advantages and Disadvantages:
+✅ Good for:
+  Small datasets
+  Learning and understanding sorting algorithms
+  Situations where swap cost is high but comparisons are cheap
+❌ Not suitable for:
+  Large datasets
+  Performance-critical applications.
