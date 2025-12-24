@@ -1,0 +1,55 @@
+Merge Sort is a Divide and Conquer sorting algorithm.
+It works in three main steps:
+    Divide the array into two halves
+    Recursively sort each half
+    Merge the sorted halves
+
+Time and Space Complexity
+Case	Time
+  Best	O(n log n)
+  Average	O(n log n)
+  Worst	O(n log n)
+
+| Space | O(n) |
+
+✔️ Stable sorting algorithm
+✔️ Efficient for large datasets
+
+🔹 Why Use Merge Sort?
+  Guaranteed performance
+  Works well on linked lists
+  Used in external sorting
+
+
+arr = [38,27,43,3,9,10,82]
+
+def merge_sort(low,high,arr):
+    if low==high:
+        return
+    mid = (low+high)//2
+    merge_sort(low,mid,arr)
+    merge_sort(mid+1,high,arr)
+    merge(low,high,mid,arr)
+
+def merge(low,high,mid,arr):
+    left = low
+    right = mid+1
+    new_arr=[]
+    while left <=mid and right<=high:
+        if arr[left]<arr[right]:
+            new_arr.append(arr[left])
+            left+=1
+        else:
+            new_arr.append(arr[right])
+            right+=1
+    while left <=mid:
+        new_arr.append(arr[left])
+        left+=1
+    while right<=high:
+        new_arr.append(arr[right])
+        right+=1
+    for i in range(low,high+1):
+        arr[i]=new_arr[i-low]
+    return arr
+merge_sort(0,len(arr)-1,arr)
+print(arr)
