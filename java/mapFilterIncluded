@@ -1,0 +1,74 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.io.*;
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main {
+    
+    public static void main(String[] args) {
+        
+        class Employee{
+        public int id;
+        public String name;
+        public long salary;
+        public Employee(int id,String name,long salary){
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+    }
+        // List<String> vehicleNames = Arrays.asList("Car","Truck","Bus","Motorcycle","Bicycle","Ambulance","Helicopter","Boat");
+        // List<String> uppercaseVehicleNames = new ArrayList<String>();
+        
+        // Before Java 8...
+        // for(String s: vehicleNames){
+        //     uppercaseVehicleNames.add(s.toUpperCase());
+        // }
+        // System.out.println(uppercaseVehicleNames);
+        
+        // After Java 8...
+        // uppercaseVehicleNames=vehicleNames.stream().map(n->n.toUpperCase()).collect(Collectors.toList());
+        // System.out.println(uppercaseVehicleNames);
+        
+        // vehicleNames.stream().map(n->n.toUpperCase()).forEach(n->System.out.println(n));
+        
+        // vehicleNames.stream().map(n->n.toUpperCase()).forEach(System.out::println);
+        
+        // List<Integer> stLength = new ArrayList<Integer>();
+        
+        // Before Java 8...
+        // for(String s:vehicleNames){
+        //     stLength.add(s.length());
+        // }
+        // System.out.println(stLength);
+        
+        // stLength = vehicleNames.stream().map(s->s.length()).collect(Collectors.toList());
+        // System.out.println(stLength);
+        // vehicleNames.stream().map(s->s.length()).forEach(s->System.out.println(s));
+        // vehicleNames.stream().map(s->s.length()).forEach(System.out::println);
+        
+        // List<Integer> nums = Arrays.asList(3,5,10,2,6,7,9);
+        // nums.stream().map(n->n*3).forEach(System.out::println);
+        
+        List<Employee> emp = new ArrayList<Employee>();
+        emp.add(new Employee(101, "Vishwa", 10000));
+        emp.add(new Employee(102, "Victor", 20000));
+        emp.add(new Employee(103, "Srinadh", 30000));
+        emp.add(new Employee(104, "Rahul", 40000));
+        emp.add(new Employee(105, "Jyothi", 50000));
+        emp.add(new Employee(106, "Ananya", 60000));
+        
+        List<Long> empSalary = new ArrayList<Long>();
+        
+        // Before Java 8...
+        // for(Employee e:emp){
+        //     if(e.salary>30000){
+        //         empSalary.add(e.salary);
+        //     }
+        // }
+        // System.out.println(empSalary);
+        
+        emp.stream().filter(e->(e.salary>30000)).map(e->e.salary).forEach(System.out::println);
+    }
+}
