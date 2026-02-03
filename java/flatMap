@@ -27,6 +27,23 @@ class Main {
                         collect(Collectors.toList());
         
         System.out.println(finalResults);
+
+        // Strings
+        List<String> teamA = Arrays.asList("Patty","Chris");
+        List<String> teamB = Arrays.asList("Aida","Paige");
+        List<String> teamC = Arrays.asList("Marsha","Justin");
         
+        List<List<String>> playersInWorldCup = Arrays.asList(teamA,teamB,teamC);
+        
+        // Before Java 8...
+        // for(List<String> str:playersInWorldCup){
+        //     for(String s:str){
+        //         System.out.println(s);
+        //     }
+        // }
+        
+        // After Java 8...
+        
+        playersInWorldCup.stream().flatMap(x->x.stream()).forEach(System.out::println);
     }
 }
