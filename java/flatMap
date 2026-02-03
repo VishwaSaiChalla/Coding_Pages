@@ -45,5 +45,35 @@ class Main {
         // After Java 8...
         
         playersInWorldCup.stream().flatMap(x->x.stream()).forEach(System.out::println);
+
+        // Object based
+
+        class Student{
+            public int sid;
+            public String name;
+            public char grade;
+            
+            public Student(int sid, String name, char grade){
+                this.sid = sid;
+                this.name = name;
+                this.grade = grade;
+            }
+        }
+        
+        List<Student> stdList1 = Arrays.asList(new Student(101,"Patty",'A'),new Student(102,"Chris",'B'),new Student(103,"Marsha",'C'));
+        
+        List<Student> stdList2 = Arrays.asList(new Student(104,"Aida",'A'),new Student(105,"Justin",'B'),new Student(106,"Paige",'C'));
+        
+        List<List<Student>> list = Arrays.asList(stdList1, stdList2);
+        
+        // Before Java 8...
+        // for(List<Student> s:list){
+        //     for(Student s1: s){
+        //         System.out.println(s1.name);
+        //     }
+        // }
+        
+        // After Java 8....
+        list.stream().flatMap(lst->lst.stream().map(std->std.name)).forEach(System.out::println);
     }
 }
