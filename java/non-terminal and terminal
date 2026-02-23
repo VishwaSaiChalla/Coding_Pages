@@ -61,3 +61,30 @@ class Main {
         System.out.println(maxNumbers.get());
     }
 }
+--------------------------------------------------------------------------------------------------------------
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+import java.io.*;
+import java.util.stream.Collectors;
+
+class Main {
+    
+    // reduce()
+    public static void main(String[] args) {
+        List<String> stringList = Arrays.asList("A","B","C","1","2","3");
+        
+        Optional<String> str = stringList.stream().reduce((value,combinedValue)->{
+            return combinedValue+value;
+        });
+        System.out.println(str.get());
+        
+        Object arr[] = stringList.stream().toArray();
+        System.out.println(arr.length);
+        
+        for(Object v:arr){
+            System.out.println(v);
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------
