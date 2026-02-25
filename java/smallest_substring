@@ -1,0 +1,47 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String s1 = "abcabcabcabc";
+        String  s2 = "a";
+        
+        // char[] ch = s2.toCharArray();
+        String token=findSmallestRepeatingToken(s2);
+        System.out.println("smallest token="+token);
+        if(s1.contains(token)){
+            System.out.println("token is present in s1");
+        }
+        
+        else{
+            System.out.println("token is not present in  s1");
+        }
+        
+        // System.out.println(token);
+        // a ab abc
+        // Smallest String in S2 is abc
+        // S1 is constructed by it or not.
+        
+        
+        
+        // if(s1.contains(s2)){
+        //     System.out.println("S2 is in S1");
+        // }
+        
+    }
+    public static String findSmallestRepeatingToken(String s){
+        int n=s.length();
+        for(int len=1;len<=n/2;len++){
+            if(n%len==0){
+                String sub=s.substring(0,len);
+                StringBuilder sb=new StringBuilder();
+                for(int i=0;i<n/len;i++){
+                    sb.append(sub);
+                }
+                if(sb.toString().equals(s)){
+                    return sub;
+                }
+            }
+        }
+        return s;
+    }
+}
