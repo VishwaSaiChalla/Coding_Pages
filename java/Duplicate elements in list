@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.stream.*;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+
+class Main {
+    public static void main(String[] args) {
+        // Find duplicate elements in a list
+        List<Integer> list = Arrays.asList(1,2,2,3,3,3,4,5,5);
+        
+        List<Integer> list1 = list.stream()
+            .collect(Collectors.groupingBy(Function.identity(),HashMap::new,Collectors.counting()))
+            .entrySet().stream()
+            .filter(e->e.getValue()>1)
+            .map(e->e.getKey())
+            .collect(Collectors.toList());
+            
+        System.out.println(list1);
+        
+        Set<Integer> seen = new HashSet<>();
+        Set<Integer> duplicates = list.stream()
+                .filter(n->!seen.add(n))
+                .collect(Collectors.toSet());
+        System.out.println(duplicates);
+        
+    }
+}
