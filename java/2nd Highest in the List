@@ -1,0 +1,21 @@
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main {
+    public static void main(String[] args) {
+        // 2nd highest number in a list.
+        List<Integer> nums = Arrays.asList(10,20,30,40,50);
+        Integer num = 
+            nums
+            .stream()// Converting List to Streams
+            .distinct()// Find the distinct elements
+            .sorted(Comparator.reverseOrder())// Sort the elements in descending order
+            .skip(1)// Skip the one element
+            .findFirst()// Send the first element
+            .orElse(null);// If no element return null.
+            
+        System.out.println(num);
+    }
+}
+
+Output: 40
