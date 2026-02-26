@@ -1,0 +1,12 @@
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main {
+    public static void main(String[] args) {
+        // Group strings by length
+        List<String> words = Arrays.asList("a","bb","ccc","dd","eee","f");
+        Map<Integer,List<String>> word = words.stream().collect(Collectors.groupingBy(st->st.length(),Collectors.toList()));
+        
+        System.out.println(word);
+    }
+}
