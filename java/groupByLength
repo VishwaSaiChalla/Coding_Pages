@@ -6,6 +6,8 @@ class Main {
         // Group strings by length
         List<String> words = Arrays.asList("a","bb","ccc","dd","eee","f");
         Map<Integer,List<String>> word = words.stream().collect(Collectors.groupingBy(st->st.length(),Collectors.toList()));
+
+        // Map<Integer, List<String>> byLen = words.stream().collect(Collectors.groupingBy(String::length));
         
         System.out.println(word);
     }
