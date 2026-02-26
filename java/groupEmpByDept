@@ -1,0 +1,48 @@
+import java.util.*;
+import java.util.stream.Collectors;
+class Emp{
+    int id;
+    String name;
+    String dept;
+    double salary;
+    
+    public Emp(int id, String name, String dept, double salary){
+        this.id=id;
+        this.name=name;
+        this.dept=dept;
+        this.salary=salary;
+    }
+    
+    public String getDept(){
+        return dept;
+    }
+    
+    public double getSalary(){
+        return salary;
+    }
+    
+    public String toString(){
+        return name + "(" + salary + ")";
+    }
+    
+}
+
+class Main {
+    public static void main(String[] args) {
+        // Group employees by department.
+        List<Emp> employees = Arrays.asList(
+            new Emp(1,"A","IT",20000),
+            new Emp(2,"B","HR",10000),
+            new Emp(3,"C","IT",30000),
+            new Emp(4,"D","FIN",20000)
+            );
+            
+        Map<String, List<Emp>> empByDept = 
+        employees
+            .stream()
+            .collect(Collectors.groupingBy(emp->emp.getDept(),Collectors.toList()));
+        System.out.println(empByDept);
+    }
+}
+
+Output: {FIN=[D(20000.0)], HR=[B(10000.0)], IT=[A(20000.0), C(30000.0)]}
