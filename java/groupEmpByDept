@@ -50,10 +50,17 @@ class Main {
             .stream()
             .collect(Collectors.groupingBy(Emp::getDept, Collectors.averagingDouble(Emp::getSalary)));
         System.out.println(avgSalByDept);
+
+        // Sort employees by salary (descending)
+        List<Emp> sortedEmployees = employees.stream().sorted(Comparator.comparingDouble(Emp::getSalary).reversed()).collect(Collectors.toList());
+        System.out.println(sortedEmployees);
+        System.out.println(sortedEmployees.get(1));
+        
     }
 }
 
 Output: 
 {FIN=[D(20000.0)], HR=[B(10000.0)], IT=[A(20000.0), C(30000.0)]}
 {FIN=20000.0, HR=10000.0, IT=25000.0}
-
+[C(30000.0), A(20000.0), D(20000.0), B(10000.0)]
+A(20000.0)
