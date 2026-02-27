@@ -1,0 +1,34 @@
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.function.Function;
+
+class Main {
+    public static String key(String s){
+        return s.chars()
+                .sorted()
+                .collect(StringBuilder::new,
+                StringBuilder::appendCodePoint,
+                StringBuilder::append)
+                .toString();
+    }
+    
+    
+    public static Map<String, List<String>> groupAnagrams(List<String> words){
+        return words.stream()
+             .filter(Objects::nonNull)
+             .collect(Collectors.groupingBy(w->key(w.toLowerCase())));
+    }
+    
+    public static void main(String[] args) {
+        List<String> words = List.of("eat", "tea", "tan", "ate", "nat", "bat");
+        
+        Map<String, List<String>> grouped = groupAnagrams(words);
+        grouped.values().stream().forEach(System.out::println);
+    }
+}
+
+output: 
+[eat, tea, ate]
+[bat]
+[tan, nat]
