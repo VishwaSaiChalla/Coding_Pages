@@ -1,0 +1,127 @@
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.function.Function;
+import java.util.stream.IntStream;
+
+import java.math.BigInteger;
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
+import java.util.concurrent.ConcurrentMap;
+import java.util.function.Function;
+import java.util.stream.*;
+
+class Emp {
+  int id;
+  String name;
+  String dept;     // can be null in some questions
+  String role;
+  double salary;
+  List<String> skills;
+
+  Emp(int id, String name, String dept, String role, double salary, List<String> skills) {
+    this.id = id; this.name = name; this.dept = dept; this.role = role; this.salary = salary; this.skills = skills;
+  }
+  int getId(){ return id; }
+  String getName(){ return name; }
+  String getDept(){ return dept; }
+  String getRole(){ return role; }
+  double getSalary(){ return salary; }
+  List<String> getSkills(){ return skills; }
+}
+
+class Transaction {
+  String userId;
+  LocalDateTime ts;
+  double amount;
+  String status; // SUCCESS/FAILED/etc
+  Transaction(String userId, LocalDateTime ts, double amount, String status){
+    this.userId=userId; this.ts=ts; this.amount=amount; this.status=status;
+  }
+  String getUserId(){ return userId; }
+  LocalDateTime getTs(){ return ts; }
+  double getAmount(){ return amount; }
+  String getStatus(){ return status; }
+}
+
+class LineItem {
+  String sku;
+  int qty;
+  double price;
+  LineItem(String sku, int qty, double price){ this.sku=sku; this.qty=qty; this.price=price; }
+  int getQty(){ return qty; }
+  double getPrice(){ return price; }
+}
+
+class Order {
+  String orderId;
+  List<LineItem> items;
+  Order(String orderId, List<LineItem> items){ this.orderId=orderId; this.items=items; }
+  List<LineItem> getItems(){ return items; }
+}
+
+class Event {
+  String id;
+  LocalDateTime ts;
+  Event(String id, LocalDateTime ts){ this.id=id; this.ts=ts; }
+  LocalDateTime getTs(){ return ts; }
+  public String toString(){ return id + "@" + ts; }
+}
+
+class Main {
+    
+    public static void main(String[] args) {
+        List<Integer> nums = Arrays.asList(50,60,70,10,20,30);
+        
+        // Top 3 highest numbers
+        
+        nums.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+        
+        List<Emp> emps = Arrays.asList(new Emp(1,"Vishwa","Tech","Junior",50000.0,Arrays.asList("Coder","Hacker")),
+                                new Emp(2,"Sumantha","Tech","TechLead",100000.0,Arrays.asList("Coder","Hacker")),
+                                new Emp(3,"Srinath","CloudTech","SeniorAnalyst",70000.0,Arrays.asList("Coder","Hacker")),
+                                new Emp(4,"Jyothi","InfraTech","SeniorAnalyst",70000.0,Arrays.asList("Coder","Hacker")));
+            
+        // 3rd highest salary (with ties vs without ties)
+        double sal = emps.stream().map(Emp::getSalary).distinct().sorted(Comparator.reverseOrder()).skip(2).findFirst().orElse(null);
+        System.out.println(sal);
+        
+        Emp sal1 = emps.stream().sorted(Comparator.comparingDouble(Emp::getSalary).reversed()).skip(2).findFirst().orElse(null);
+        System.out.println(sal1.getSalary());
+        
+        // Sort by dept asc then salary desc
+        List<Emp> emp = emps.stream().sorted(Comparator.comparing(Emp::getDept)).sorted(Comparator.comparingDouble(Emp::getSalary).reversed()).collect(Collectors.toList());
+        
+        
+        // Bottom 5 efficiently.
+        List<Integer> num = nums.stream().sorted().limit(5).toList();
+        System.out.println(num);
+        
+        // Closest number to X
+        int X = 37;
+        
+        Integer closest = nums.stream().min(Comparator.comparingInt(n->Math.abs(n-X))).orElse(null);
+        System.out.println(closest);
+        
+        // Max salary employee in each dept
+        Map<String,Emp> maxEmpByDept = emps.stream()
+                                           .collect(Collectors.groupingBy(Emp::getDept,
+                                           Collectors.collectingAndThen(
+                                           Collectors.maxBy(Comparator.comparingDouble(Emp::getSalary)),
+                                           opt->opt.orElse(null)
+                                           )));
+        for(Map.Entry<String,Emp> entry:maxEmpByDept.entrySet()){
+            System.out.print(entry.getKey()+" "+entry.getValue().getName());
+            System.out.println();
+        }
+        
+        // Total salary per dept
+        Map<String,Double> emp2 = emps.stream().collect(Collectors.groupingBy(Emp::getDept,Collectors.summingDouble(Emp::getSalary)));
+        for(Map.Entry<String,Double> entry:emp2.entrySet()){
+            System.out.print(entry.getKey()+" "+entry.getValue());
+            System.out.println();
+        }
+        
+    }
+}
