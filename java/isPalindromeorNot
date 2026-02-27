@@ -1,0 +1,24 @@
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.function.Function;
+import java.util.stream.IntStream;
+
+class Main {
+    public static boolean isPalidrome(String str){
+        if(str==null) return false;
+        
+        String cleaned = str.replaceAll("[^a-zA-Z0-9]","")
+                            .toLowerCase();
+                            
+        return IntStream.range(0,cleaned.length()/2)
+                        .allMatch(i->(cleaned.charAt(i)==cleaned.charAt(cleaned.length()-i-1)));
+    }
+    
+    public static void main(String[] args) {
+        // Write where the given string is palindrome or not
+        System.out.println(isPalidrome("A man, a plan, a canal: Panama"));
+    }
+}
+
+output: true
