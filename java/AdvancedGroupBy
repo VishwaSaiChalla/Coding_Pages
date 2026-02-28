@@ -122,6 +122,30 @@ class Main {
             System.out.print(entry.getKey()+" "+entry.getValue());
             System.out.println();
         }
+
+
+        Map<String, Emp> salEmpByDept = emps
+        .stream()
+        .collect(Collectors.groupingBy(Emp::getDept,Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparingDouble(Emp::getSalary)),
+            opt->opt.orElse(null)
+        )));
         
+        for(Map.Entry<String,Emp> entry:salEmpByDept.entrySet()){
+            System.out.println(entry.getKey()+"->"+entry.getValue().getSalary());
+        }
+
+        // Count, avg, min, max salary per dept
+        record SalaryStats(long count, double avg, double min, double max) {}
+        
+        Map<String, SalaryStats> salSummaryPerDept = 
+            emps.stream()
+                .collect(Collectors.groupingBy(Emp::getDept,
+                Collectors.collectingAndThen(Collectors.summarizingDouble(Emp::getSalary),
+                s->new SalaryStats(s.getCount(),s.getAverage(),s.getMin(),s.getMax())
+                )));
+                
+        for(Map.Entry<String,SalaryStats> entry:salSummaryPerDept.entrySet()){
+            System.out.println(entry.getKey()+"->"+entry.getValue());
+        }
     }
 }
