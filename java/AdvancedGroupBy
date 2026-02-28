@@ -147,5 +147,27 @@ class Main {
         for(Map.Entry<String,SalaryStats> entry:salSummaryPerDept.entrySet()){
             System.out.println(entry.getKey()+"->"+entry.getValue());
         }
+
+        // Map
+        Map<String, Integer> info = new HashMap<>();
+        info.put("David",10000);
+        info.put("Vishwa",20000);
+        info.put("Ram",50000);
+        info.put("Sri",100000);
+        
+        // Sort by Salary
+        Map<String, Integer> sortBySal = info
+            .entrySet()
+            .stream()
+            .sorted(Map.Entry.<String,Integer>comparingByValue().reversed())
+            // .sorted(Comparator.comparingInt(val->val.getValue()).reversed())
+            .collect(Collectors.toMap(
+                Map.Entry::getKey,
+                Map.Entry::getValue,
+                (e1,e2)->e1,
+                LinkedHashMap::new));
+        for(Map.Entry<String, Integer> entry: sortBySal.entrySet()){
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
     }
 }
