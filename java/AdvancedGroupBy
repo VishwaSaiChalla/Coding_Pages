@@ -169,5 +169,21 @@ class Main {
         for(Map.Entry<String, Integer> entry: sortBySal.entrySet()){
             System.out.println(entry.getKey()+" "+entry.getValue());
         }
+
+        // Group transactions by status + count
+        List<Transaction> transaction = new ArrayList<>();
+        transaction.add(new Transaction("10",LocalDateTime.of(2014, Month.JANUARY, 1, 10, 10, 30),20000, "SUCCESS"));
+        transaction.add(new Transaction("20",LocalDateTime.of(2014, Month.JANUARY, 2, 10, 10, 30),20000, "FAILURE"));
+        transaction.add(new Transaction("30",LocalDateTime.of(2014, Month.JANUARY, 3, 10, 10, 30),20000, "SUCCESS"));
+        transaction.add(new Transaction("40",LocalDateTime.of(2014, Month.JANUARY, 4, 10, 10, 30),20000, "FAILURE"));
+        
+        Map<String, Long> countByStatus = 
+        transaction
+            .stream()
+            .collect(Collectors.groupingBy(Transaction::getStatus,Collectors.counting()));
+        
+        for(Map.Entry<String, Long> entry:countByStatus.entrySet()){
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
     }
 }
