@@ -1,0 +1,3680 @@
+Python Programming:
+-------------------
+-->In order to know the python program.Any of the basic programming language.
+   If u r not aware also not a problem."C" is the base for all the languages.
+-->Python is a highly preferable as it is a very easy language.It is very much
+   similar to the basic english language.
+-->Python is a general purpose high level programing language.
+   For Ex:Web applications,Machine Learning,Artificial Intelligence,Robotics etc..
+-->Assembly language is easily understandable language by machine.But it is 
+   difficult for the normal human being.
+-->Python is developed by Guido Van Rossam.Father of Python.It was developed in
+   1989 while working at NRI(Netherlands Research Institue.).
+-->But Python is officially available in 1991.20th Feb 1991.
+-->Python is highly recommended as the first programming language.
+-->Programs can be written very easily.
+-->First Program in Python.
+	ex:print("Hello World") //This one line is enough to print
+-->Python has the Integrated Development Environment.
+-->Print sum of two numbers.
+	example:	a=10,b=20 //a,b=10,20
+			print(a+b)
+
+			a,b,c,d,e=10,20,30,40,50
+			print(a+b+c+d+e)
+-->Length code also can be written in the simple lines of code.
+-->C,Java are Statically typed Programming languages.Which means declaration
+   sld be done initially.
+-->In python automatically it will assign the required data type.
+		a=10
+		type(a)
+-->There are no notations like semi colons are required.
+-->At any instant the variable type can get changed based on the assignment 
+   of the variable.
+
+			a=10
+			type(a) //<class 'int'>
+			a=True
+			type(a) //<class bool>
+-->Conclusion is we don't need to declare the type of variable in python.
+-->This is the reason that Python is a dynamically typed Programming language.
+-->Python==>(Monty Python's Circus 1969 to 1974)Based on this show the name came.
+   Hadoop(Which handles the big data)==>Yellow Cap elephant.
+-->Programming Features.
+
+	1.Functional Programming from C.
+	2.OOP from C++.
+	3.Scripting language features from Perl and shell Script.
+	4.Modular Programming Features.(Program is Divided into modules.)
+-->Python is Functional,OOP,Scrpting and Modular Programming Language.
+-->>>def f1():print("Good Evening")
+	>>>f1() //Good Evening.
+-->Most of the features are borrowed from C and ABC Language.
+-->Where we can use Python:
+   ------------------------
+	1.Desktop Applications.
+	2.Web Applications.(Django,Flask FrameWork for development.)
+	3.DataBase Applications.(Using the Inbuilt Libraries)
+	4.Networking Applications.
+	5.Games.
+	6.Data Analysis.
+	7.Machine Learning.
+	8.AI.
+	9.IOT applications.
+-->For mobile based applications python is not recommended.
+-->Companies Using Python.
+
+	Google
+	Youtube
+	Dropbox
+	NASA
+	Stock Exchanges use this Language.
+-----------------------------------------------------------------------------------
+CLASS 2:
+--------
+53 keywords in Java.
+-->Features of Python:
+   -------------------
+	1.Simple and Easy to learn.(Python is similar to english language).
+		
+		i)for i in range(10):
+			print(i)
+
+		ii)x=10 if a>b else 20
+
+	  There are 30 keywords in Python.Length of the code can be decreased
+	  and readability can be improved.	
+	2.Python is a Opensource(Source can be seen) Software and FreeWare
+	  (Not required to pay any money).Jython is customized python to work with Java.
+	3.High Level Programming Language.(Human Understandable language)Conversions
+	  are done with the help of interpreter.
+	4.Python is Platform Independent.(Write Once and Run Anywhere).
+	5.Portability(Migrating Python Program from one place to other without any changes.)
+	  Example:u wrote on windows and tried executing in linux or mac no changes are needed.
+	6.Dynamically typed programming language.(Vimp)
+		In python we are not req to declare type of the variable it is automatically assigned.
+		>>x=10		>>x=10.5			>>x=True
+		>>type(x)		>>type(x)			>>type(x)
+		<class 'int'>	<class 'float'>		<class 'bool'>
+	  Double is not present in Python.
+	7.Python is Object Oriented and Procedure Oriented Programming Language.
+	8.Interpreted.(We might have the performance issues.)
+	9.Extensible.(We can use other Programming languages code also in Python)
+	  We Can improve performance of the application.
+	10.Embedded.(We can use Python in anyother programming languages together).
+	11.Extensive Library(Python has Rich libraries.)
+		import math 				#from random import *
+		print(math.sqrt(4))			#print(randint(0,9),randint(0,9),randint(0,9),randint(0,9),sep="")	#OTP==>6 digits
+---------------------------------------------------------------------------------------------------------------------------------------
+Limitations Of Python:
+----------------------
+1.Performance wise python is not upto the mark.(As it is a Interpreter Oriented Language).
+  Java > Python(Performance wise).
+2.Mobile applications can't be built.
+------------------------------------------------------------------------------------------------------
+Class:3
+-------
+-->Myth:Python is not suitable for Large Scale enterprise applications.
+-->Python is not Pure Object Oriented Programming language.
+
+-->Python is openSource
+	Flavors of Python:
+	------------------
+	1.CPython:It is used to work with C,Python.
+	2.Jython/JPython:It is used to work with Java.
+	3.IronPython:It is For C#.
+	4.Pypy:More Performance wise more than Python.(Internally JIT compiler is used.)
+	5.RubyPython:
+	6.AnacondaPython:Used for handling the big data.
+	7.Stackless(Python for concurrency.)**
+
+Python Versions:
+----------------
+-->Python 1.0 introduced in Jan 1994.
+-->Python 2.0 introduced in Oct 2000.
+-->Python 3.0 introduced in Dec 2008.
+-->Python 3.6.3 introduced latest.
+
+Any new version sld provide support for old version programs.
+Python 3 does not support Python 2.
+Python does not have the backward compatibility.
+
+>>print "Hello" #valid in Python 2 but invalid in Python 3.
+-->print("Hello") Python 3.
+long data type ==>Python 2 but not in Python 3.
+ 
+Identifiers:
+------------
+-->Name of the variable is called the identifier.
+	x=10.
+
+def f1():
+	pass
+class Test(Exception)
+
+-->Variable Name,Class Name or Method Name.
+
+Rules to define Identifiers in Python
+-------------------------------------
+-->Alphabet symbols(both upper case and lower case).
+   digits(0 to 9).
+   underscore(_).
+-->total123=10
+   123total=10 #Invalid
+   Identifier sld not start with digit.
+-->total = 10
+   TOTAL = 20
+   Python Identifier is Case Sensitive Programming Language.
+-->x=10
+   def=20
+   if=20
+   Reserved words and Keywords are not allowed to use as Identifier Purpose.
+-->Max allowed length in python is (NO LENGTH LIMIT).
+
+
+123total	invalid
+total123	Valid
+java2share	Valid
+ca$h		Invalid
+_abc_abc_	valid(Underscore means private)
+def		Invalid
+if		Invalid
+
+_==>Private
+__ ==>Strong Private
+
+__main__ ==>Starts and endswith underscore symbols it is language specific identifier.
+---------------------------------------------------------------------------
+Class 4:
+--------
+-->Variable name,Method name,Class Name.
+-->a to z,A to Z,0-9,...
+-->sld not starts with digit.
+-->case sensitive.
+-->Cannot use reserved words as identifiers.(typeError.)
+-->No Length Limit.Take based on the readability.
+
+_x ==> Private
+__x ==> Strongly Private
+__x__ ==>Language Defined Special name.
+
+-->do while and switch are not present in Python.
+Reserved Words:(33 reserved Words are there in Python.)
+---------------
+-->True,False(Boolean Values),None.(This is similar to null.)
+-->and,or,not,is.()
+-->if,else,elif.()
+-->while,for,break,continue,return,in,yield.
+-->try,except,finally,raise(similar to throw),assert.
+-->import,from,as,class,def,pass,global,nonlocal,lambda(Anonymous function),del,with.
+
+
+Note:
+-----
+1.All reserved words contains only alphabet symbols.
+2.Except first three rest all are in small case.
+
+>>a=True
+>>a
+True.
+
+>>a=true #NameError.
+
+>>a=none #NameError.
+
+>>import keyword
+>>keyword.kwlist	#This will list all the keywords.keyword is a module.
+
+Identifiers and Reserved Words.
+-----------------------------------------------------------------------
+
+DataTypes:
+----------
+-->The type of data represent by a variable.
+-->Not needed to declare the variable with type it will be automatically assigned.
+	>>a=10
+	>>type(a)
+	Output:<class 'int'>
+-->Various Datatypes present in Python are:
+	int(10,20,100 etc...)[To represent Whole Numbers.]
+	[long is avaiable in Python 2]
+	float(0.2,10.234 etc...)[To represent Decimal Values.]
+	complex ==>[10+2i]
+	bool(True,False)
+	str		
+	bytes		
+	bytearray
+	range
+	list		
+	tuple		
+	set
+	frozenset
+	dict
+	None
+
+-->Python provides some inbuilt functions.
+
+	print()	#to print data
+	type()	#to get the datatype.
+
+-->a=10
+-->In Python Everything is an Object.
+-->Address of the object can be got from id()[#To Print the address].
+---------------------------------------------------------------------------1.int:
+------
+Integral values
+10 20 30
+1000000000000000
+
+-->a=10	type(a)	<class 'int'>
+long==>python 3 not available.
+
+For int data type we can assign values in four ways.
+1.Decimal Form.
+2.Binary Form.
+3.Octal Form
+4.Hexa decimal Form.
+
+1.Decimal Form(Base-10)	[0-9]	ex:a=7879.
+2.Binary Form(Base-2) [0&1]	
+	ex:a=0b1111 #0B1111. o/p:15
+	Whenever we print the a we will be getting the value as 15.
+	ex:a=-0b1111	o/p:-15	[for negative values].
+3.Octal(Base-8)	[0-7]
+	ex:a=0O777	#0o777
+	Whenever weprint the a we will be getting the value as 585.
+4.HexaDecimal(Base-16)	[0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f or A,B,C,D,E,F].
+	ex:a=0xFace a=0XFace o/p:64206
+	   a=0xBeef	o/p:48879
+	   a=0xBeer #Invalid Syntax error.
+-------------------------------------------------
+-->a=10	b=0o10	c=0b10	d=0x10 Output will be only in decimal form.
+-->Size,Range is not a matter in Python.
+---------------------------------------------------------------------------
+Class:5
+-------
+-->Python is dynamically typed programming language.
+-->In all the other languages if we declare the variable then it cannot be assigned to another language[Incompatible Type Error].
+-->But in python we can change the type by directly assigning in bw the program
+
+ex:	x=10	type(x) #<Class 'int'>	x=True type(x)#<class 'bool'>
+
+-->int datatype is used to hold integral values.
+	whole numbers==>12345,789...
+-->With the help of the internal functions we might get the respective values gets printed in their form.
+-->In Java int is of primitive type size and range are fixed.
+-->Size of object cannot be told which is not fixed.
+-->In Python Everything is and object size range max min concept won't be there.
+-->Conversion of one base to another base.
+
+BaseConversions:
+----------------
+==>bin()	oct()		hex()
+-->Using these functions we can convert any base to any other base.
+	ex:x=10	Convert to Binary bin(x).
+	   bin(0o777)	bin(0x1234).
+-->oct(786)	oct(0xFac9e).
+-->hex(10)	hex(16789).
+
+Python 2 & Python 3
+-->long is present in 2 to hold large integral values.but 3 we have only int for all the integers.
+-->hex		x=0XFace.
+-------------------------------------------------------------------------
+float data Type:
+----------------
+salary:2345.67
+price:65.25
+These are not the integral values.
+=>To handle decimal type of values we use float type.By defaultly it will     be assigned.
+
+>>f=123.456	type(f)	#<class 'int'>
+
+=>f=123.456	#Decimal Form.
+=>f=0x123.456	#HexaDecimal Form.	Not Applicable
+=>f=0o123.456	#Octal Form.	Not Applicable
+-->In float we have only decimal Form only.
+
+Exponential form:	1.2e3==> 1.2*10^3==> 1200.0	This Type is Allowed in Python
+
+=>Bigger value also can be specified with the smaller space.
+--------------------------------------------------------------------------
+complex DataType:
+-----------------
+=>	a+bj This is a sample complex form.
+	a->Real Part(can be in any form)	
+	b->Imaginary Part.(can be Decimal form Only)	
+	j^2=-1.
+
+>>x=10+20j	type(x)	#<class 'complex'>
+>>y=10.5+2.3j	(y)	#(10.5+2.3j).
+we sld take only j as a variable.
+=>'j' is mandatory and first b then j sld be kept.
+>>a=10+20j
+>>b=20+30j
+>>a+b
+30+50j
+a-b	a*b
+-->Arthimetic Operations can be performed on complex numbers.
+a.real	#will print real part value.
+a.imag	#will print imaginary value.
+These are mostly used in Mathematical and Scientific problems.
+---------------------------------------------------------------------------
+bool datatype:
+-------------
+=>"True" and "False" are allowed values for the boolean datatype.
+=>b=True	type(b)	<class 'bool'>
+=>b=true	# NameError.
+=>a=10	b=20	c=a<b	True
+Internally These are represented as True[1] and False[0]. 
+	True+True=>True or error or None.Not an Answer.
+	True+True=>2
+	True+False=>1
+---------------------------------------------------------------------------
+str datatype:
+-------------
+=>String datatype:Any sequence of characters is called str type.
+=>Enclose in single or double quotes.Without that we will get NameError.
+
+s='Vishwa'	s="Vishwa"	type(s)		#<class 'str'>
+
+=>Single quote is default in python.
+=>For Multiline or double/single inside a string use triple (single/double) quotes.
+=>s='''Vishwa is a "Good" Boy'''
+---------------------------------------------------------------------------
+slicing Operator/slice Operator:
+
+ex:"Durga Software solutions"	s[2:8]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Class:6
+-------
+=>There are 14 datatypes in Python.
+
+int,float,complex,bool,range,byte,byteArray,list,tuple,set,frozenset,dict,None
+
+=>True+True=2
+  True+False=1
+  True/False(Zero Division Error.)
+-----------------------------------
+=>str:
+------
+-->A sequence of Characters Within single or double or triple quotes.
+-->In Python we do not have char datatype.
+-->For Multiline string literals we use triple quotes.
+
+Slice(substring) Operator:
+---------------
+=>x='Durgasoft'
+=>s='durga'
+
+=>+ve index is possible.
+=>-ve index is possible.
+	-5	-4	-3	-2	-1
+	d	u	r	g	a
+	0	1	2	3	4
+
+s[0]#d	s[1]#u	s[2]#r	s[-1]#a	s[-3]#r	s[10]#IndexError:string index out of range.
+=>In python we can move from right to left(-ve) and left to right(+ve).
+=>To provide flexibility to the Program python gave thistype of indexing.
+
+syntax:	s[begin:end]#Starting index element is included and end is excluded
+	s[1:4]	#urg.
+	s[2:3]	#r.
+	s[1:]	#urga.		s[3:]	#ga
+	s[:4]	#durg.		!s[:5]	#durga
+	s[:]	#durga.
+	s[-1:-4]#''		s[-4:-1]#urg	s[100] #IndexError
+	s[1:100]#urga	Not Error.
+
+=>syntax: s[begin:end:step]
+	  s='durgasoftwaresolutions'
+	  s[1:10]==>1 to 9
+	  s[1:10:2]#ugdfw
+
+==>s='durga'
+==>s*10	#To print durga 10 times.
+==>len(s)
+
+Note:
+-----
+1.int float complex bool str[These are pythons fundamental datatypes.].
+2.char data type is not available but even char values also represented   using str only.
+3.long datatype is not available in python 3.But by using int these are represented.
+
+TypeCasting or Type Coersion:
+-----------------------------
+-->We can convert from one type to other type by type casting.
+-->int()	float()		complex()	bool()		str()
+
+int():
+------
+-->To convert from any other type to int.
+-->int(123.456) #123
+-->int(10+20j)	#Complex number cannot be convert to int we get TypeError.
+-->int(True)	#1
+-->int(False)	#0
+-->int("10")	#10
+-->int("10.5")	#ValueError
+-->int("1111")	#1111
+-->int("0B1111")#it always expects decimal form again valueerror.
+
+float():
+--------
+-->To convert from any type to float.
+-->float(10)	#10.0.
+-->float(10+20j)#TypeError.
+-->float(True)	#1.0.
+-->float(False)	#0.0.
+-->float("10")	#10.0.
+-->float("10.5")#10.5.
+-->float("ten")	#ValueError.
+-->float("0b1111")#ValueError.
+---------------------------------------------------------------------------
+Class:7
+-------
+complex():
+----------
+=>To Convert other types to complex type.There are two complex forms.
+=>Form-1:complex(x)==>x+0j
+=>Form-2:complex(x,y)==>x+yj
+
+Form-1:complex(x)==>x+0j
+------------------------
+=>complex(10)==>10+0j.
+=>complex(10.5)==>10.5+0j.
+=>complex(True)==>1+0j.
+=>complex(False)==>0j.
+=>complex("10")==>10+0j.
+=>complex("10.5")==>10.5+0j.
+=>complex("ten")==>ValueError.[malformed]
+=>complex("0B1111")==>ValueError.[malformed]
+
+Form-2:complex(x,y)==>x+yj
+--------------------------
+=>complex(10,20)==>10+20j
+=>complex(True,False)==>1+0j
+=>complex(10,20.5)==>10+20.5j
+=>complex("10","12")==>TypeError[complex cannot take second arg if first is s String].
+
+bool():
+-------
+=>To convert other types to bool type.
+=>for int argument:
+-------------------
+bool(0)==>False
+bool(10)==>True
+bool(-10)==>True
+=>Non Zero means True.
+
+for float argument:
+-------------------
+=>0.0=>False=>In all other cases its True.
+bool(0.0)=>False
+bool(0.1)=>True
+
+for complex numbers:
+--------------------
+=>bool(10+20j)=>True
+=>bool(0+0j)=>False
+=>bool(0+1j)=>True
+=>if both are zero then the output is False.else it is True.
+
+for str argument:
+-----------------
+=>arg is empty string==>''==>False In all other cases it is treated as True.
+=>bool('')==>False
+=>bool('durga')==>True
+=>bool(' ')==>True
+---------------------------------------------------------------------------
+str():
+------
+=>str(10)==>'10'.
+=>str(10.5)==>'10.5'.
+=>str(10+20j)==>'10+20j'.
+---------------------------------------------------------------------------Immutable vs Fundamental Data types:
+------------------------------------
+=>Non changable nature is called as immutable.
+=>Mutable means Changable.
+=>Immutable means Non Changable.
+=>All fundamental datatypes are immutable.As everything is an object.
+=>x=10 and x=11 here the memory does not change as it is object and the reference points to new object.
+=>Old Object is collected by Garbage collector.
+=>x=10 #id(x) y=10 #id(y) z=10 #id(z) [id(x)=id(y)=id(z)].
+=>In Python we have the Object Reusability.
+=>Once an object is created it can be used by multiple references.
+=>All fundamental datatype objects are immutable.
+---------------------------------------------------------------------------
+=>x=10 y=10 [x is y (or) y is x]-True
+=>x=True y=True z=True.[x is y / y is x/ x is z]
+=>x=257 y=257 [x is y False] #Reusablity can be used from 0 to 256.
+=>x=10.0 y=10.0 => [x is y #False].
+=>x=10+20j y=10+20j =>[x is y #False].
+---------------------------------------------------------------------------
+Class:8
+-------
+=>float value==>int value==>int()
+=>bool value==>int value==>int()
+=>int value==>str value==>str()
+=>complex numbers==>int value==>
+=>complex numbers==>float value==>
+=>complex numbers==>bool value==>
+=>any type==>str type==>str() function
+--------------------------------------
+Fundamental data types vs immutability:
+---------------------------------------
+Once we create an object it can be reused and it cannot be changed.
+All the basic data types are immutable.
+Memory Utilization and performance will be improved.
+Object Creation is most costly than checking the value in memory.
+checking ==> 1ns	object creation ==> 10000ns.
+=>In python multiple referneces can use a single object.
+
+
+a=10
+b=10
+c=10
+For all the three only one object is getting created.
+
+only in the following ranges:
+-----------------------------
+int==>0 to 256.
+bool==>always.
+str==>always.
+float and complex always a new object will be created.
+Limits are set to improve or maintain the performance.The ranges are mostly commonly used.
+
+At the time python interpreter starts:
+--------------------------------------
+from 0 to 256 integer objects will be created at the beginning.
+bool will get created at the start.
+str will get created at the run time.
+str literals are reused multiple times.
+---------------------------------------------------------------------------
+bytes Data type:
+----------------
+=>This data type represents a group of byte numbers which holds together.
+
+>>x=[10,20,30,40]
+>>b= bytes(x)
+>>type(b)#<class 'bytes'>
+b[0]	#10
+b[1]	#20
+b[-1]	#40
+b[0:3]	#b'\n\x14\x1e
+
+=>for x in b: print(x)
+
+1.In the bytes every value sld be in range of 0 to 256.
+
+>>x=[10,20,256,258]
+>>b=bytes(x)
+ValueError.
+
+2.bytes data type is immutable.
+
+>>x=[10,20,30,40]
+>>b=bytes(x)
+>>b[0]
+10
+>>b[0]=120
+#TypeError:byte obj does not support item assignment.
+---------------------------------------------------------------------------
+bytearray==>both are same.
+bytearray is mutable.
+
+>>x=[10,20,30,40]
+>>b=bytearray(x)
+>>type(b)
+<class 'bytearray'>
+>>b[0]=120
+>>for i in b:print(i)
+
+In the bytearray every value sld be in range of 0 to 256.
+If we want to handle binary data like images video files then we are gng to use bytes or bytearray.
+---------------------------------------------------------------------------
+list data type:(mutable)
+---------------
+=>A group of values as a single entity where insertion order is preserved and duplicates are allowed.List is growable.List allows Heterogeneous objects.values sld be enclosed with [].
+>>l=[]
+>>type(l)
+#<class 'list'>
+
+>>l.append(10)
+>>l.append(20)
+>>l.append(30)
+>>l.append(10)
+>>print(l)
+[10,20,30,10].
+>>l.append('durga')
+>>print(l)
+[10,20,30,10,'durga']
+>>l.append(None)
+>>print(l)
+#[10,20,30,10,'durga',None]
+=>By indexing or slicing able to access the list elements.
+>>l[-1]
+>>l[1:5]
+[20,30,10,'durga'].
+>>l.remove(10)
+[20,30,10,'durga',None].
+---------------------------------------------------------------------------
+Class:9
+-------
+=>index==>+ve or -ve
++ve from left to right
+-ve==>right to left
+
+>>s=[10,'durga',True].
+>>s1=s*2
+>>s1
+[10,'durga',True,10,'durga',True].
+>>type(s1)
+<class 'list'>
+-------------------------------------------------------------
+A group of values where insertion order is preserved duplicates are allowed and heterogeneous objects are allowed.
+but i want immutability then we go for tuple.
+
+tuple datatype:(immutable)
+--------------------------
+=>l=[10,20,30,40]
+=>t=()
+
+>>t=(10,'durga',True,10)
+>>t
+(10,'durga',True,10)
+>>t[0]
+10
+>>t[0:3]
+(10,'durga',True)
+>>t[0]=100	#TypeError:tuple obj does not support item assignment.
+
+(10,20,[2,6]) valid tuple only.
+---------------------------------------------------------------------------
+range():
+--------
+=>range data type represents a sequence of values.
+=>immutable
+
+1.range(10):single argument passing.
+It represents values from 0 to 9(end -1).
+
+>>r=range(10)
+>>type(r)
+<class 'range'>
+>>r
+range(0,10)
+>>for i in r: print(i)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>r[0]
+0
+>>r[0:3]
+#0,1,2
+>>r[0]=77
+TypeError.
+
+range(100)
+
+2.10 to 29
+range(10,30) two arguments to represent numbers from 10 to 29.
+
+3.range(10,50,5)
+10 to 50 everytime increment by 5(step size).
+
+==>for i in range(10,50,5):print(i)
+10
+15
+20
+25
+30
+35
+40
+45
+>>range(10.5,20.6)
+TypeError:float obj cannot be interpreted as an integer.
+---------------------------------------------------------------------------
+set:
+----
+-->Duplicates are not needed and order preservation is not req then we go for set datatype.
+-->s={}.
+-->s=set()//empty set.
+
+>>s={10,20,30,10,20,30}
+>>s
+{10,20,30}
+=>set does not allows duplicates
+#internally only one will considered.
+>>s[0]	#cannot be accessed with indexing and slicing not applicable.
+>>s[1:]
+
+insertion order	N
+duplicates	N
+heterogeneous	Y
+index		N
+slicing		N
+growble		Y
+
+>>s.add('durga')
+>>s
+{10,20,30,'durga'}
+>>s.remove(20)
+{10,30,'durga'}
+---------------------------------------------------------------------------
+frozenset data type:
+--------------------
+-->same as set but immutable.
+>>>s={10,20,30,40}
+>>>fs=frozenset(s)
+>>>type(fs)	#<class 'frozenset'>
+>>>fs
+>>>frozenset({40,10,20,30})
+>>>fs.add(50)	#AttributeError.
+>>>fs.remove(10)#AttributeError.
+
+Group of unique values but no one is allowed to change content.
+---------------------------------------------------------------------------dict data type:
+---------------
+dictionary
+
+words==>meaning
+key-->value
+
+list,tuple,set,frozenset,range,byte,bytearray==>only values are present.[Applicable for Individual objects].
+
+rollno-->name
+word-->meaning
+mobilenumber-->name
+
+100 durga
+200 shiva
+
+-->key duplicates are not allowed but values can be duplicated.
+[]-list
+()-tuple
+{}-set
+{}-dict
+
+>>d={100:'durga',200:'shiva',300:'ravi'}
+>>type(d)
+#<class 'dict'>
+>>d
+{100:'durga',200:'shiva',300:'ravi'}
+>>d1={}
+>>type(d1)
+empty dictionary only..
+>>d1[100]='sunny'
+>>d1
+{100:'sunny'}
+>>d1[200]='bunny'
+>>d1
+{100:'sunny',200:'bunny'}
+>>d1[100]='chinny'
+>>d1
+{100:'chinny',200:'bunny'}
+
+=>Mutable,Duplicate keys are not allowed..
+---------------------------------------------------------------------------
+Class:10
+--------
+=>Dictionary:
+-------------
+key-value pairs.Mutable
+
+d={100:'Durga',200:'Ravi'}
+dict==>{}
+set==>{}
+List==>[]
+tuple==>()
+
+1.int float complex bool str are fundamental data types in python.immutable
+2.bytes[immutable] and bytearray[mutable] 0 to 256range.To represent binary data like images,video file and audio files.
+3.List[mutable] and Tuple[immutable],allows duplicates,insertion order preserved,accessed using the indexing and slicing.
+4.set[mutable] and frozenset[immutable],does not allow duplicates,insertion order is not preserved.cannot be accessed using the indexing and slicing.
+
+Voter Registration Application(Form):
+-------------------------------------
+Name:
+Father Name:
+Mother Name:
+age:
+DOB:
+email:
+Gender:
+Address:
+	H.NO:
+	Street:
+	City:
+	State:
+Identification Marks-1:
+Identification Marks-2:
+Aadhar No:
+-------------------------------------
+=>A sequence of characters in single double, triple quotes is called a string.
+
+>>def f1():
+	a=10
+>>def f2(): print("Hello Don't be like None")
+>>f2()
+Hello Don't be like None
+>>f2()
+Hello Don't be like None
+==>print(f1())
+None
+>>def f1():
+	pass
+
+Escape Characters:
+------------------
+\n - nxt line.
+\t - tab space.
+\r - carriage return[Start pos]
+\b -
+\f - Page Down
+\'
+\"
+\\
+\v - vertical tab space
+
+s="Python by \"Durga Sir\" is good."
+s='Python by "Durga Sir" is good.'
+s="Python by 'Durga Sir' is good."
+s='''Python by 'Durga Sir' is good and his "Material" also good.'''
+s="""Python by 'Durga Sir' is good and his "Material" also good."""
+s=Python by \'Durga Sir\' is good and his \"Material\" also good.
+
+Constants:
+----------
+=>The fixed value never change.
+	final int x=10.
+	x=11 //In other language error.
+
+-->In Python how can we represent Constants.
+-->final keyword not present in python.
+	>>const x=10.//Wrong 
+-->In python we don't have(cannot specify) constants. 
+---------------------------------------------------------------------------
+Class:11
+--------
+Till now we finished the Language Fundamentals.
+
+=>Operators In Python:
+----------------------
+
+Operator:
+---------
+-->Arithmetic Operators.
+-->Relational Operators or Comparsion Operators.
+-->Logical Operators.
+-->Bitwise Operators
+-->Assignment Operators.
+-->Special Operators.
+-------------------------------------------------
+-->'+'=Addition.
+-->'-'=Substraction.
+-->'*'=Multiplication.
+-->'/'=Division Operator.[Result of division operator is floating value.]
+-->"%"=Modulo Operator.
+-->'//'=Floor Division Operator.
+-->'**'=Exponent Operator or Power Operator.[Result of division operator is int,float based on arguments type value.]
+
+>>a=10
+>>b=2
+>>print("a+b=",a+b)#12
+>>print("a-b=",a-b)#8
+>>print("a*b=",a*b)#20
+>>print("a/b=",a/b)#5.0
+>>print("a%b=",a%b)#0
+>>print("a//b=",a//b)#5
+>>>>print("a**b=",a**b)#100
+
+>>a=10.5
+>>b=2
+>>a/b	#5.25
+>>a//b	#5.0
+
+-->There are 7 Arithmetic operators.
+
+>>10/3		#3.33333335
+>>10//3		#3
+>>10.0//3	#3.0
+
+=> '+' is applicable for str type also it acts as String Concatenation operator.
+
+>>'durga'+3	#TypeError
+>>'durga'+'3'	#'durga3'
+>>'durga'+str(3)#'durga3'
+
+=>* operator for str type
+=>String multiplication operator.
+
+>>'durga'*3	#"durgadurgadurga"
+>>'durga'*'3'	#TypeError.
+>>'durga'*3.0	#TypeError.
+>>2*'durga'	#"durgadurga"
+
+**
+--
+>>10**2		#100
+>>10**-2	#0.01
+
+>>(10+2j)**(10+3j)	#This will be working internally
+--------------------------------------------------------.
+>>x/0		#Zero Division Error.
+>>x%0		#Zero Division Error.
+>>x//0		#Zero Division Error.
+
+x can be any number.
+>>0/0		#Zero Division Error.
+>>10**0		#1
+--------------------------------------------------------.
+Relational Operators:
+---------------------
+-->	>,>=,<,<= are relational operators.
+
+a=10
+b=20
+print("a>b is:",a>b)	False
+print("a>=b is:",a>=b)	False
+print("a<b is:",a<=b)	True
+print("a<b is:",a<b)	True
+
+-->Relational Operators can also be applied to str type also.
+-->Comparision will happen with respect to alphabetical order.
+
+a='durga'	 
+b='ravi'
+print("a>b is:",a>b)	False.
+print("a>=b is:",a>=b)	False.
+print("a<b is:",a<=b)	True.
+print("a<b is:",a<b)	True.
+
+A==>65
+a==>97
+
+Comparision will happen in unicode way.
+
+a='durga'	 
+b='darga'
+print("a>b is:",a>b)	True.
+print("a>=b is:",a>=b)	True.
+print("a<b is:",a<=b)	False.
+print("a<b is:",a<b)	False.
+
+a=True
+b=False
+print("a>b is:",a>b)	True.
+print("a>=b is:",a>=b)	True.
+print("a<b is:",a<=b)	False.
+print("a<b is:",a<b)	False.
+
+boolean values will be considered as 1 and 0.
+
+a='True'
+b='False'
+print("a>b is:",a>b)	True.
+print("a>=b is:",a>=b)	True.
+print("a<b is:",a<=b)	False.
+print("a<b is:",a<b)	False.
+
+-->if comparision type are not same we get TypeError.
+
+a=10
+b=20
+if a>b:
+  print("a is greater than b")
+else:
+  print("a is not greater than b")
+
+#a is not greater than b
+
+-->While using the indentation we might get the following errors.
+-->Syntax Error:
+   Tab Error:inconsistent use of tabs and spaces in indentation.
+
+Chaining pf Relational Operators:
+---------------------------------
+==>10<20		True
+==>10<20<30<40		True
+==>10<20<30<40<50>70	False
+==>10<20<35>3		True
+
+Equality Operators:
+-------------------
+>>== and !=
+---------------------------------------------------------------------------
+Class 12:
+------------
+------------
+Operators:
+----------
+1.Arithmetic Operators:
+-----------------------
++,-,*,/,% ==> float values.
+// ==> floor division.
+** ==> exponent operator.
+
+=>10/2 ==> 5.0
+=>10//2 ==> 5
+=>10.0//2 ==>5.0
+------------------------
++ and * are applicable for strings also.
+'durga'+'soft'==>durgasoft.
+'durga'+10==>error.
+
+'durga'*3
+3*'durga'
+'durga'*'soft'
+------------------------------------------
+2.Relational Operators:
+-----------------------
+=>	10>20==>False.
+=>	'durga'<'ravi'==>True.
+=>	True>False==>True.
+=>	'roja'<'ramya'==>False.
+=>	10>True==>True.
+=>	10>'durga'==>TypeError.
+
+Chaining of Relational Operators:
+---------------------------------
+=>10<20<30<40	True.
+=>10<20>30<40<50<60	False.
+=>If all comparisions are True then True else it is False.
+----------------------------------------------------------
+Equality Operators:(!= and ==)
+------------------------------
+=>	10==20 False.
+=>	10!=20 True.
+=>	10==True False.
+=>	False==False True.
+
+=>Here double equals does content comparision only.
+=>'durga'=='durga' True
+=>10=='durga' False.
+=>If compatibility is not there we get simply get False.
+=>	10==20==30==40	False.
+=>	10!=20!=30!=40	True.
+=>	10==5+5==3+7==2*5 True.
+=>	'a'==97 False.
+=>	10+2j==10+2j	True.
+=>	10+2j=='durga' False.
+=>Equality operator never raise error.
+-----------------------------------------------------------
+=(Assignment Operator) and ==(Comparision Operator)
+
+a=10 and a==10
+10==10.0	True.	//smaller type is promoted as bigger type.
+10=='10'	False	//Not compatible
+1==True		True.	//Boolean is compatible with int.
+10==10.1	False.
+10.10==10.1	True.
+-------------------------------------------------------------
+Logical Operators:
+------------------
+==>'and'-If Both arguments are True then only True.
+==>'or'-If atleast one is True then O/p is True.
+==>'not'-Inverts the output.
+=>We can apply for boolean and non boolean type.
+
+=>True and False	False.
+=>True or False		True.
+=>not True		False.
+
+For non Boolean Types:
+----------------------
+=>0 means False.
+=>non-zero means True.
+=>empty String('') ==>False.
+
+x and y
+---------
+==>if x evalutes to False then result is x otherwise returns y.
+==>0 and 20 ==> 0.returns
+==>0 and 2000 ==> 0.
+==>10 and 20 ==> 20.
+==>1 and 'durga' ==> 'durga'.
+==>0 and 'durga' ==> 0
+
+x or y:
+-------
+==>if x evaluated to True then return x otherwise return y.
+
+==>10 or 20 ==> 10
+==>0 or 20 ==> 20
+==>10 or 20 ==> 10
+==>0 or 20 ==> 20
+==>0 or 0 ==> 0
+==>0 or True ==> True.
+
+not x:
+------
+=> not 10 #False.
+=> not '' #True.
+=> not 0  #True.
+=> 10 or 10/0 #10.
+=> 0 or 10/0 #Zero Division Error.
+---------------------------------------------------------------------------
+Bitwise Operators:
+------------------
+&	|	^	~	<<	>>
+
+==>For int and boolean types are applicable for anyother we are gng to get error.
+
+==>4&5	==>Valid
+==>True & True =>valid
+==>10.5 & 2.6 =>invalid. TypeError unsupported type error.
+
+==> & if Both bits are 1 then only 1 otherwise 0.
+==> | if atleast 1 bit is 1 then 1 otherwise 0.
+==> ^ if both aruguments are different then 1 otherwise 0.
+==> ~ bitwise complement operator 1==>0 and 0==>1
+==> << bitwise left shift.
+==> >> bitwise right shift.
+
+==>4 & 5 ==> 100 & 101 ==> 100 ==> 4.
+==>4 | 5 ==> 100 | 101 ==> 101 ==> 5.
+==>4 ^ 5 ==> 100 ^ 101 ==> 001 ==> 1.
+
+bitwise complement operator(~):
+-------------------------------
+==> ~4 ==> ~100 ==> 1011 ==> -5
+
+=> 4 ==> 0000000000000000000000000..........100 ==>First bit is sign bit
+
+=> 0 -> +ve(represented directly) and 1 -> -ve(represented in 2's complement form).
+=> ~4 => 1111111111111111111111111...011 => most significant bit is 1 then it is negative value.
+=>00000000000000000....100(1's complement) then add one to get 2's complement.
+=>00000000000000000....101 => 5 answer is (-5).
+
+=> ~True ==> ~1 ==> -2.
+---------------------------------------------------------------------------
+class 13:
+---------
+=>print(4&5)==>4
+=>print(4|5)==>5
+=>print(4^5)==>1
+=>print(~4)==>-5
+=>print(~True)==>-2
+=>print(not True)==>False.
+--------------------------
+Shift Operators:
+----------------
+<< ==>Left Shift Operator.
+>> ==>Right Shift Operator.
+
+print(10<<2)	#32
+
+==>0000000..0001010 ==>00000000000.....000101000 => 40
+-->Right Hand Side vacant cells fill with 0s.Always
+
+>> operator:
+------------
+-->	10>>2 
+-->	Left hand side vacant cells sign bit.
+	+ve numbers ==> 0
+	-ve numbers ==> 1
+
+	00000000000....001010 ==> 0000000000000....000010 ==> 2.
+				  --
+==>	-10>>2 #-3
+	print(True<<2)	#4
+	1<<2 ==> 000000000000.....001 ==> 00000000....00100. ==> 4
+
+==>print(True<<2)==>	1<<2	==>	00000000000....00001
+	0000000000000...000100 ==> 4.
+==>print(True>>2)==> 	00000000000...0001==>0000000000...0000	==>	0
+-------------------------------------------------------------------------
+Assignment Operators:
+---------------------
+x=10
+=>Simple assignment operator.
+
+>>a,b,c,d=10,20,30,40.#Number of variables and values sld be matched.
+>>print(a,b,c,d)
+
+--> x += 10 compound assignment operator.Assignment operator mixed with any      other operator.(x=x+10)
+
+--> x++,++x are not present in python.Increment operators does not perform any action in python.As they are not available in Python.
+
+-->In python increment and decrement operators are not present.They are treated as sign of the variable.
+
+-->Syntax Error will be coming.
+
+-->	+=	-=	*=	/=	%=	//=	**=	&=	|=	^=	<<=	>>=.
+
+>>a=4
+>>a&=5
+>>print(a)
+
+4.
+---------------------------------------------------------------------------
+Ternary Operator:
+-----------------
+-->	x=(condition)?firstValue:secondValue.
+-->	x=(10<20)?30:40
+-->	print(x)
+
+##Syntax error will be thrown.
+
+-->In python ternary operator is available but we had different syntax.
+
+-->x=firstValue if condition else secondValue.
+
+>>x = 30 if 10<20 else 40
+>>print(x)
+
+>>a,b=10,20
+>>x=30 if a>b else 40
+>>print(x)
+
+40
+
+-->	a,b=b,a #swapping without any other operator.
+---------------------------------------------------------------------------
+a=input("Enter First Number:")
+-->If we want to read data at run time.input function will return String datatype only.with type casting convert string to int
+
+-->a=int(input("Enter First Number:"))
+-->b=int(input("Enter Second Number:"))
+-->min = a if a<b else b
+-->print("Minimum Value:",min)
+
+-->x = firstValue if condition1 else secondValue if condition2 else thirdValue.
+
+-->x=10 if 20<30 else 40 if 50<60 else 70
+-->print(x)
+
+--> x=10 if 20>30 else 40 if 50>60 else 70
+-->print(x)
+
+-->a=int(input("Enter First Number:"))
+-->b=int(input("Enter Second Number:"))
+-->c=int(input("Enter Third Number:"))
+
+-->max=a if a>b>c else b if b>c else c
+-->print(max)
+
+-->a=int(input("Enter First Number:"))
+-->b=int(input("Enter Second Number:"))
+-->c=int(input("Enter Third Number:"))
+
+-->max=a if a>b and a>c else b if b>c else c
+-->print(max)
+
+-->a=int(input("Enter First Number:"))
+-->b=int(input("Enter Second Number:"))
+--> print("Both are equal" if a==b else "greater" if a>b else "smaller")
+
+-->Length of the code can be decreased with the ternary operators.
+---------------------------------------------------------------------------
+Special Operators:
+------------------
+-->Identity Operators.
+-->Membership Operators.
+
+1.Identity Operators:
+---------------------
+=>a=10
+=>b=10
+=>print(a is b)
+=>print(a is not b)
+
+#True.
+#False.
+
+==>'is','is not' identity operators.
+
+==>	r1 is r2 ==>True.
+==>	r1 is not r2 ==>True.
+
+=>a="durga"
+=>b="durga"
+=>print(id(a))
+=>print(id(b))
+=>print(a is b)		True.
+
+=>list1=[10,20,30]
+=>list2=[10,20,30]
+=>print(id(list1))	//id() function will return address.
+=>print(id(list2))
+=>print(list1 is list2)	False.
+=>"is" checks for address comparision and "==" checks for content comparision.
+---------------------------------------------------------------------------Class 14
+--------
+1.Identity Operators.
+2.Membership Operators.
+
+1.Identity Operators:
+---------------------
+is , is not
+-->If a and b both are pointing to the same object or address then is will return True.
+
+=>list1=[10,20,30]
+=>list2=[10,20,30]
+=>print(list1==list2)
+
+What is the difference b/w == and is operator?
+----------------------------------------------
+
+2.Membership Operators:
+-----------------------
+in, not in
+
+-->list1=[10,20,30]
+-->print(10 in list1)	#True.
+-->print(60 in list1)	#False.
+-->print(70 not in list1)	#True.
+
+-->s="Hello Learning Python is very very easy!!!"
+-->print("Hello" in s)	True
+-->print("L" in s)	True
+-->print("Z" not in s)	True
+
+-->Python is a case sensitive language.
+-->At a time one argument only can be used.
+-------------------------------------------
+-->3+10*2=23
+
+Operator Precedence:
+--------------------
+>>10+2*3	#16
+>>(10+2)*3	#36
+
+()==>Paranthesis.	First
+unary operators.	~x. High
+binary operators.	x+y. Medium
+ternary operators.	3 arguments. Low
+
+a=10+2/3-4*5 ??
+Assignment has least preference.
+
+Python precedence.
+
+()==>Paranthesis.
+**==>exponential operator.
+~,-==>unary operator.
+*,/,%,//
++,-
+<<,>>
+&
+^
+|
+>,>=,<,<=,==,!=
+=,+=,-=,*=.....
+is,is not
+in,not in
+not
+and
+or
+
+=>Python is also having operator precedence.
+--------------------------------------------
+a=30
+b=20
+c=10
+d=5
+
+print((a+b)*c/d)	#100.0
+print((a+b)*(c/d))	#100.0
+print(a+(b*c)/d))	#70.0
+
+
+-->Python is rich in libraries that is the reason python has short code.
+-->In Python there is 'module' keyWord.
+-->module is a group of functions,variables,classes.
+-->A group of modules is called library.
+-->math module for the mathematical operations.
+
+-->for using a module first it needs to be imported using import..
+
+import math
+print(math.sqrt(16))
+print(math.pi)
+
+-->if we wanted to change name we use aliasing
+
+import math as m
+print(m.sqrt(25))
+print(math.pi)	#Will this gets executed.
+
+-->If we want only the specific functions alone.
+
+from math import sqrt pi
+print(sqrt(81))
+print(pi)
+
+from math import *
+print(sqrt(81))
+print(pi)
+
+from math import *
+r=int(input("Enter the radius of the circle:"))
+area=pi*r**2
+print(area)
+---------------------------------------------------------------------------
+Input and output statements:
+----------------------------
+-->In Python 2.
+-->Read data from the keyboard which is nthng but dynamic data.
+-->x=raw_input("Enter some number")#This is always treated as str type only
+-->y=input("Enter some number")#not consider as str type wat ever type we provided.We are not required to perform typecasting.
+
+-->In python 3 raw input is not available.
+x=input("Enter some number:") This is same as raw_input function of python2
+
+>>type(input("Enter some number:"))	<class 'str'>
+
+>>x=input("Enter First Number:")
+>>y=input("Enter Second Number:")
+>>i=int(x)
+>>j=int(y)
+>>print("The sum is :",i+j)
+
+>>print("The sum :",int(input("Enter First number"))+int(input("Enter Second Number:")))
+---------------------------------------------------------------------------
+class 15:
+---------
+Input & Output:
+---------------
+=>In python 2 we have input(returns watever passed in the dynamic input) and raw_input functions(returns String for all the input).
+=>In python 3 we have input function only(returns String for all inputs).
+>>x=input("Enter Something:");
+>>print(type(x))
+#<class 'str'>
+for converting to int we need to use int().
+
+-->String is default type in all the coding languages.
+
+>>x=int(input("Enter First Number:"))
+>>y=int(input("Enter Second Number:"))
+>>print("The sum:",x+y)
+#The sum:30
+
+>>print("The sum :",int(input("Enter First number"))+int(input("Enter Second Number:")))
+
+-->Write a Program to read employee data from the keyboard.
+eno,ename,esal and eaddr,Married or not.Print the Data.
+
+eno=int(input("Enter Employee Number:"))
+ename=input("Enter Employee Name:")
+esal=float(input("Enter Employee Salary:"))
+eaddr=input("Enter Employee Address:")
+married=bool(input("Enter Employee Marriage Status:[True|False]"))
+
+print("Please confirm Information..")
+print("Employee Number:",eno)
+print("Employee Name:",ename)
+print("Employee Salary:",esal)
+print("Employee Address:",eaddr)
+print("Employee Marriage?:",Married)
+##...Output will be printed based on the input.
+
+How to read multiple values from the keyboard in a single line:
+---------------------------------------------------------------
+a,b = [int(x) for x in input("Enter 2 numbers:").split()]#default is space.
+print("The Product:",a*b)
+
+10 20(Split will be space.)
+
+#Read two float values from the keyboard which are specified with , separation and print sum.
+
+10.2,10.6
+
+>>a,b=[float(x) for x in input("Enter 2 float Values:").split(',')]
+>>print("The Sum:",a+b)
+
+>>a,b,c,d=[int(x) for x in input("Enter 4 float Values:").split(',')]
+>>print("The Sum:",a+b+c+d)
+
+eval():
+-------
+>>x=eval("10+20+30")
+>>print(x)
+
+>>ex=input("Enter some expression:")
+>>result=eval(ex)
+>>print("The Result:",result)
+Enter some expression:10+30-40*30/3%4
+The Result: 40.0
+
+>>x=int(input("Enter some Number:"))
+>>type(x)
+#<class 'str'>
+
+>>x=eval(input("Enter some Number:"))
+>>type(x)
+1.[10,20,30]
+2.(10,20,30)
+#1.<class 'list'>
+#2.<class 'tuple'>
+
+x=eval(input("Enter some data:"))
+print(type(x))
+for x1 in x:
+   print(x1)
+
+a,b,c=[eval(x) for x in input("Enter 3 values:").split(",")]
+print(type(a))
+print(type(b))
+print(type(c))
+#10,20,30
+#<class 'int'>
+#<class 'int'>
+#<class 'int'>
+
+is split(5) valid?	TypeError must be str or None, not int
+split('5')	#10520530. This is Valid Input only..
+
+Command Line Arguments:
+-----------------------
+-->The Arguments which are passed from command prompt are called command line arguments.
+-->ex: py test.py 10 20 30 40 50
+-->Above input is sending while compiling.
+-->This way input is passed for the command line arguments.
+
+-->main(String[] args) This is in java.
+-->same way in python it is..
+
+argv-This is list type.This is not String type.
+-->It is available in sys module.
+
+
+--------------------
+from sys import argv
+print(type(argv))
+
+#<class 'list'>
+
+-----------------
+py test.py 10 20 30
+
+For this we get 4 splits first one it will consider as one parameter.
+---------------------------------------------------------------------
+from sys import argv
+print(argv)
+print(argv[1:])
+print(argv[0])
+print(argv[1])
+---------------------------------------------------------------------------
+class 16
+--------
+-->string==>str
+-->eval()-evalate to specified function.This will evaluate the expression as well.
+
+-->list=eval(input("Enter List of Values:"))
+Enter List of values[10,20,30,40]
+-->type(list)
+<class ''list'>
+
+Command Line Arguments:
+-----------------------
+-->py test.py 10 20 30 40
+These arguments are called as command line arguments.
+-->argv we can import this module.
+
+----------------------------------
+from sys import argv
+print(argv)
+
+-->py test.py 10 20 30 40
+	0     1  2  3  4
+
+#['test.py','10','20','30','40']
+
+-->print(argv[0])
+-->print(argv[1:])
+-->print(argv[:])
+
+#argv[begin:end:step]
+-------------------------------------------------------------------------
+Is there any way to print all the element by skipping only middle element from array? For this code to be written explicitly.
+
+--------------------
+from sys import argv
+print("The number of command line arguments:",len(argv))
+print("The List of command Line arguments:"argv)
+print("Command line arguments one by one:")
+for x in argv:
+	print(x)
+print("Slice Operator result:",argv[1:3])
+
+-->py test.py A B C D E F
+#The number of command line arguments:7
+#The List of command Line arguments:['test.py','A','B','C','D','E','F']
+#Command line arguments one by one:
+test.py
+A
+B
+C
+D
+E
+F
+#Slice Operator result: {'A','B'}
+---------------------------------------------------------------------------
+-->Pass group of values from keyboard.Read command line arguments and print sum.
+
+from sys import argv
+args=argv[1:]
+sum=0
+for x in args:
+	sum += int(x)
+print("The Sum: "sum)
+
+-->py test.py 10 20 30 40
+#The Sum: 100
+--------------------------
+from sys import argv
+print(argv[1])
+
+-->py test.py Sunny Leone
+#Sunny
+-->py test.py "Sunny Leone"
+---------------------------------------------------------------------------
+from sys import argv
+print(argv[1])
+-->py test.py Sunny Leone
+#Sunny
+-->py test.py "Sunny Leone"
+#Sunny Leone
+-->py test.py 'Sunny Leone'
+#'Sunny
+-->py test.py """Sunny Leone"""
+-->py test.py '''Sunny Leone'''
+-------------------------------
+from sys import argv
+print(int(argv[1])+int(argv[2]))
+-->py test.py 10 20
+#1020
+--------------------------------
+from sys import argv
+print(argv[100]
+---------------------------------------------------------------------------
+class:17
+--------
+input()
+command line arguments
+----------------------
+OUTPUT Statements:
+------------------
+Various types of print function.
+print() function.To print statements in console.
+
+form:1:
+-------
+print() without the arguments.This behaves as a new line.If we need new line character we can use the blank print function
+
+print("Hello")
+print()
+print("Good Evening")
+print("How are you")
+
+#Hello
+#
+#Good Evening
+#How are you
+
+form:2
+------
+print function with string argument.print(String).
+print("Hello \n Vishwa")#We can use escape characters inside the print function.
+we can use concatenation and arithematic operators as well.
+print("Vishwa"+"Sai")#VishwaSai
+print("durga"+3)
++==>both arguments sld be str type only
+*==>one sld be str and other is int.
+print("durga"*3)
+
+print("durga","software")#Vishwa Sai
+
+form:3
+------
+-->print() with variable numer of arguments:
+--------------------------------------------
+a,b,c=10,20,30
+print("The values are:",a,b,c)
+#10 20 30.
+-->Space is the default in between two arguments.
+var-arg(variable number of arguments.)
+
+sep attribute:
+--------------
+a,b,c=10,20,30
+print(a,b,c)
+print(a,b,c,sep=',')
+print(a,b,c,sep=':')
+-->default separate is space if we need other separate we can used sep attribute.
+--------------------------------------------------------------
+print() with end attribute:
+---------------------------
+
+print("Hello",ends='')
+print("Students",ends='')
+print("Python",ends='')
+print("Very easy")
+
+#for printing in the same line using all the print statements.
+#Total data will come in single line only.
+
+-->print(10,20,30,40,sep=':',end='...')#bw arguments sep is used and to get in same line end is used.
+-->print(50,60,70,80,sep='-')
+---------------------------------------------------------------------------print() with end attribute:
+---------------------------
+-->print(Object)
+
+ex:
+l=[10,20,30,40]
+t=(10,20,30,40)
+s={10,20,30,40}
+print(l,end='...')
+print(t,end='...')
+print(s)
+print(l,t,s)
+---------------------------------------------------------------------------
+print(formatted string):
+------------------------
+%i==>int type
+%d==>int type
+%f==>float
+%s==>str type
+
+print("formatted string" %(variable list))
+
+ex:
+a,b,c=10,20,30
+print("a value is %i" %a)#a value is 10
+print("a value is %i and b value is %i" %(a,b))#a value is 10 b value is 20
+
+name="Durga"
+l=[10,20,30,40]
+print("Hello %s the list is:%s" %(name,l))
+#Hello Durga the list is:[10,20,30,40]
+---------------------------------------------------------------------------
+print() function with replacement operator:
+-------------------------------------------
+{}-replacement operator.
+
+name="Durga"
+salary=10000
+gf="Sunny"
+print("Hello {0} yout salary is {1} and your gf {2} is waiting".format(name,salary,gf))
+print("Hello {} yout salary is {} and your gf {} is waiting".format(name,salary,gf))#default is 0,1,2
+print("Hello {x} yout salary is {y} and your gf {z} is waiting".format(z=gf,y=salary,x=name))#here it can be in anyorder.
+---------------------------------------------------------------------------
+
+Flow Control:
+-------------
+3 types
+-------
+1.conditional/selection statements
+----------------------------------
+
+if x
+  option1
+else
+  option2
+
+if x
+  action1
+elif x
+  action2
+elif x
+  action3
+
+if
+if-else
+if-elif-else
+
+switch(not available)
+-------------------------------------
+2.Iterative statements:
+-----------------------
+loops
+
+for loop
+while
+
+do while(not available)
+--------------------------------------
+3.Transfer statements
+---------------------
+
+break
+continue
+pass
+---------------------------------------
+return statements is available.
+
+
+1.conditional statements:
+-------------------------
+if condition:
+	print(x)
+	print(x)
+	print(x)
+-->with indention if block code is separated.
+
+ex:
+
+if(x=10):
+  print(x)
+  print(x)
+  print(x)
+print(x)
+print(x)
+print(x)
+print(x)
+----------------------------------------------
+name=input("Enter Name:")
+if name=="durga":
+	print("Hello Durga Good morning")
+print("How are you")
+
+#Enter Name:durga
+#Hello Durga Good Morning.
+#How are you
+----------------------------------------------
+if x:
+  action-1
+else:
+  action-2
+----------
+ex:
+name=input("Enter Name:")
+if name=="durga":
+	print("Hello Durga Good morning")
+else:
+	print("Hello Guys Good morning")
+print("How are you")
+
+#Enter Name:Vishwa
+#Hello Guys Good Morning.
+#How are you
+-----------------------------------------------
+if-elif-else
+
+brand=input("Enter your favourite brand")
+if brand=="RC":
+	print("It is childrens brand")
+elif brand="KF":
+	print("It is not that much kick")
+elif brand=="KO":
+	print("It is too light")
+elif brand=="FO":
+	print("Buy one get one free")
+else:
+	print("Other brands are not recommended")
+
+-->py test.py
+#Enter your favourite brand:RC
+#It is childrens brand
+
+-->else is not mandatory everytime.
+---------------------------------------------------------------------------
+class 18:
+---------
+-->flow control
+
+selection statements:
+---------------------
+if,if-else,if-elif-else,if-elif..
+
+-->identation is main aspect in python.
+
+x=10
+if x==10:
+	statement-1
+	statement-2
+statement-3
+
+-->statement-1,statement-2 are inside the if block and 3 is outside the if block.Spaces in python matters alot.
+
+-->Read 2 numbers from cmd and print biggest of two given numbers.
+
+	n1=int(input("Enter First Number"))
+	n2=int(input("Enter Second Number"))
+
+	if n1>n2:
+		print("Bigger number is:",n1)
+	else:
+		print("Bigger number is:",n2)
+
+exe:py test.py
+Enter First Number:100
+Enter Second Number:200
+Bigger number is:200
+
+exe:py test.py
+Enter First Number:-100
+Enter Second Number:-200
+Bigger number is:-100
+
+-->Read 2 numbers from cmd and print biggest of two given numbers.
+
+	n1=int(input("Enter First Number"))
+	n2=int(input("Enter Second Number"))
+	n2=int(input("Enter Third Number"))
+
+	if n1>n2 and n1>n3:
+		print("Bigger number is:",n1)
+	elif n2>n3:
+		print("Bigger number is:",n2)
+	else:
+		print("Bigger number is:",n3)
+
+exe:py test.py
+Enter First Number:100
+Enter Second Number:200
+Enter Third Number:300
+Bigger number is:300
+
+exe:py test.py
+Enter First Number:10
+Enter Second Number:30
+Enter Third Number:27
+Bigger number is:30
+
+exe:py test.py
+Enter First Number:'durga'
+Enter Second Number:'ravi'
+Enter Third Number:'shiva'
+Bigger number is: shiva
+----------------------------------
+-->eval can be used for every type of the input.
+-->Read input and print whether the given number is even or odd.
+-->write a program to check whether the given num is in b/w 1 and 100 or not.
+
+n=int(input("Enter number:"))
+if n>=1 and n<=100:	#1<=n<=100
+	print("The number",n," is in between 1 and 100")
+else:
+	print("The number",n," is not in between 1 and 100")
+
+exe:Enter number:200
+The number 200 is not in between 1 and 100..
+--------------------------------------------
+enter some digit from the keyboard..
+
+0==>Zero
+1==>One
+
+n= int(input("Enter a digit from 0 to 9."))
+
+if n==0:
+	print("ZERO")
+elif n==1:
+	print("ONE")
+elif n==2:
+	print("TWO")
+elif n==3:
+	print("THREE")
+elif n==4:
+	print("FOUR")
+elif n==5:
+	print("FIVE")
+elif n==6:
+	print("SIX")
+elif n==7:
+	print("SEVEN")
+elif n==8:
+	print("EIGHT")
+elif n==9:
+	print("NINE")
+else:
+	print("Plz enter a number from 0 to 9 only")
+----------------------------------------------------
+1==>ONE
+12==>Tweleve
+123==>one hundred and twenty three.Write the code for this inputs
+------------------------------------------------------------------
+Iterative Statements:
+---------------------
+loops,A group of statements executed repetitively.
+
+-->for loop,while loop.only loops in python.
+
+for loop:
+---------
+In python by default we have for each loop only..
+
+for each elements in sequence :
+	do some action.
+
+-->sequence can be str type,List,Range,Tuple,Set.
+-->Body will be executed for every element in sequence.
+
+>>s="Sunny Leone"
+>>for i in s:
+	print(s)
+S
+u
+n
+n
+y
+
+L
+e
+o
+n
+e
+---------------------------------------------------------------------
+>>s="Sunny Leone"
+>>for i in s:
+	count+=1
+	print(s)
+print("The number of characters:",count)
+S
+u
+n
+n
+y
+
+L
+e
+o
+n
+e
+The number of characters:11
+----------------------------------------------------------------------
+l=[10,20,30,40]
+
+for x in l:
+	print(x)
+----------------------------------------------------------------------
+Enter input from keyboard and print the string index wise.
+
+s=input("Enter the String:")
+for i in range(len(s)):
+	print("The character present at",i,"is",s[i])
+----------------------------------------------------------------------
+for x in range(10):
+	print(x)
+----------------------------------------------------------------------
+Between 0 to 21 print only odd numbers.
+
+for i in range(21):
+	if i%2!=0:
+		print(i)
+
+for i in range(1,21,2):
+	print(i)
+-----------------------------------------------------------------------
+10 to 1 in descending order
+
+for i in range(10,0,-1):
+	print(i)
+-----------------------------------------------------------------------
+List of numbers from the keyboard..
+list=[10,20,30,40]
+
+l=eval(input("Enter some List"))
+sum=0
+for x in l:
+	sum+=x
+print("The sum:"sum)
+-----------------------------------------------------------------------
+-->For loop is used when we need to perform a certain operation for every element.If we know iterations in advance we go for FOR loop.
+
+while loop:
+-----------
+-->iterations are not known in advance.
+-->We want to execute a loop as long as condition is true then we go for while loop..
+
+while condition:
+	body
+---------------------------------------------------------------------------
+x=1
+while x<=10:
+	print(x)
+	x+=1
+prints the values till 10.
+--------------------------------------------------------------------------
+Class 19:
+---------
+-->while loop:
+--------------
+for x in range(10)
+	print(x)
+------------------
+while condition:
+	body
+-->As long as the condition is true this loop will be executed..
+----------------------------------------------------------------
+x=1
+while x<=10:
+	print(x)
+	x+=1
+-----------------------------------------------------------------
+The sum of first n numbers..
+
+num= int(input("Enter some number:"))
+sum=0
+while i<=num:
+	sum+=i
+	i+=1
+print(""The sum of first",n," numbers is ",sum)
+
+-->As long as the condition is true this code will get executed when the condition fails the code will terminate the loop.
+--------------------------------------------------
+Write a program that takes a name from keyboard.If name is not the name which is urs it sld ask us again to enetr the name.
+
+name=""
+while name!="vishwa":
+	name= input("Enter Name:")
+print("Hello ",name," thanks for confirmation.")
+------------------------------------------------
+-->If we are not sure abt number of iterations then we sld go for while loop.
+
+Infinite Loops:
+---------------
+i=0
+while True:
+	i+=1
+	print("Hello:",i)
+
+This is a sample example for infinite loop.As the condition is true for all the cases.
+-------------------------------------------
+-->Nested Loops:
+----------------
+for i in range(4):
+	body
+-->we can use a loop inside a loop.
+
+for i in range(4):
+	for j in range(4):
+		print("i = {} and j = {}".format(i,j))
+------------------------------------------------------
+the number of rows:1
+*
+the number of rows:2
+*
+**
+the number of rows:3
+*
+**
+***
+
+num=input("Enter the number of rows:")
+for i in range(num):	#1,n+1
+	for j in range(i+1):	#1,i+1
+		print("*",ends="")
+	print()
+
+output:
+Enter the number of rows:3
+*
+* *
+* * *
+
+for i in range(1,n+1):
+	print("*"*i)
+--------------------------------------------------------
+*
+
+**
+**
+
+***
+***
+***
+
+num = int(input("Enter number of rows:"))
+for i in range(num):
+	for j in range(num):
+		print("*",end=" ")
+	print()
+
+or
+
+for i in range(n):
+	print("*"*n)
+---------------------------------------------------------------------------
+class 20:
+---------
+Patterns Examples...
+
+i=0
+while True:
+	print("Hello")
+	i+=1
+	if i==5:
+		break
+----------------------
+i=0
+while 1:
+	print("Hello")
+	i+=1
+	if i==5:
+		break
+----------------------
+
+Transfer Statements:
+--------------------
+1.break
+2.continue
+3.pass
+
+1.break:
+--------
+-->come out of the loop.
+-->Break the loop based on some condition..
+
+for i in range(10):
+	if i==7:
+		print("Processing is enough...plz break")
+		break
+	print(i)
+---------------------------------------------------------
+cart=[10,20,600,70,80,90]
+
+for item in cart:
+	if item>500:
+		print("We cannot process this order.. insurance is req")
+		break
+	print("Processing item:",item)
+-------------------------------------------------------------------------
+2.continue:
+-----------
+
+while condition:
+	body
+	body
+	continue
+	body
+	body
+-------------------------
+for i in range(10):
+	if i%2==0:
+		continue
+	print(i)
+
+1 3 5 7 9
+-------------------------
+cart=[10,20,600,70,80,90]
+
+for item in cart:
+   if item>500:
+	print("We cannot process this order",item," insurance is req")
+	continue
+   print("Processing item:",item)
+---------------------------------
+numbers = [10,20,0,5,0,30]
+
+for i in numbers:
+	if i==0:
+		print("Division Error")
+		continue
+	print("100/{}={}".format(i,100/i))
+------------------------------------------
+for-else
+while-else
+try-except-else-finally
+------------------------------------------
+loop(while or for loop)
+	statement-1
+	statement-1
+	statement-1
+	break
+	statement-1
+	statement-1
+else:
+	statements
+-->else will get execute when the break statement is not executed
+-----------------------------------------------------------------
+
+cart=[10,20,60,70,90]
+for item in cart:
+	if item>500:
+	print("We cannot process this order",item," insurance is req")
+	break
+   print("Processing item:",item)
+else:
+   print("All items processed sucessfully")
+
+-->else block gets executed when break is not executed..
+-->for-else is valid in python.
+-->else means loop without break.
+---------------------------------------------------------------------------class 21:
+---------
+pass statement:
+---------------
+-->pass is a keyword in python.
+------------------------------
+if True:
+    pass
+else:
+    print("Hello")
+-----------------------------------------------------
+-->If we need a empty block we go for pass statement.
+
+pass:
+1.It is an empty statement.
+2.It won't do anything.
+3.It is null statement.
+
+def f1():
+	print("Hello")
+
+def f2():
+	pass
+
+f1()
+f2()
+--------------------------------------------------------
+class P:
+    def m1():pass
+class C(P):
+    def m1():
+	statement1
+	statement1
+	statement1
+	statement1
+------------------------
+for i in range(100):
+	if i%10==0:
+		print(i)
+	else:pass
+------------------------
+del statement:
+--------------
+-->del is a keyword in python.
+s1='durga'
+s2='ravi'
+.
+.
+.
+.
+s1234..='shiva'
+-->Whenever we no longer need the object we remove it by using the del    keyword.
+--------
+x=10
+print(x)
+del x
+print(x)#NameError: name 'x' is not defined.
+--------------------------------------------
+-->After deleting there is no possibility for accessing the same variable..
+-->Garbage collector will take the variable to clean data.
+----------------------------------------------------------
+s="durga"	==>Immutable.
+del s[1]	#Immutable we are not able to delete the single variables.
+-->We can delete the string completely..
+
+x=10
+work with x completed.
+del x	#Memory utilization will be improved..
+-------------------------------------------
+x=10
+y=20
+del x,y
+print(x)#Error
+print(y)#Error
+--------------
+
+del and None.
+-------------
+-->If we do not require the object and variable then we go for del keyword.
+-->If we need the variable then we go for None.(s1=None)
+
+x=10
+y=20
+del x
+y=None
+print(x)#Error
+print(y)#None
+--------------
+s1="durga"
+s2="durga"
+s3="durga"
+print(type(s1),type(s2),type(s3))
+del s1
+print(s2)
+print(s3)
+---------------------------------
+del id(s1)#Can't delete a function call.
+
+String Data Type:
+-----------------
+-->Most Commonly used object is String Object in many projects.
+
+Voter Registration:
+-------------------
+Name
+Age
+DOB
+Father Name
+Mother Name
+Address:
+	Hno
+	Street
+	Village
+	Mandal
+	District
+	State
+Aadhar No:
+identification mark1:
+identification mark2: 
+----------------------
+String:
+-------
+Any Sequence of characters within a single or double quotes is called as String.
+
+s='durga'
+s="durga"
+
+Note:
+-----
+ch='a'==>str only
+-->In python we do not have char datatype.Still we treat it as str only.
+-->for multiline string literals we use triple quotes.
+'''  '''
+"""  """
+-->We can use both single and double.
+
+s="This is ' single quote symbol."
+print(s)
+
+s='This is \'single quote symbol.'
+print(s)
+
+s='This is " double quote symbol.'
+print(s)
+
+s='''These are ' and "symbols'''
+print(s)
+
+How to access characters of the string:
+---------------------------------------
+by using index.
+by using slice operator.
+
+s='durga'
+print(s[0])
+
+-5	-4	-3	-2	-1
+d	u	r	g	a
+0	1	2	3	4
+
+-->Negative indexing is present in python.
+-->s[7]	#String index out of range..
+-->s[-1]
+
+Write a program to accept some string from the keyboard and print all characters with index.
+
+OUTPUT:
+-------
+-->The character at +ve index 0 and -ve index -5 is d.
+
+s=input("Enter some string:")
+i=0
+for x in s:
+	print("The character present at positive index:{} and at negative index:{} is:{}".format(i,i-len(s),x))
+	i=i+1
+---------------------------------------------------------------------------
+class 22:
+---------
+-->String is most commonly used data type in all languages.A group of characters within single or double quotes is called as String data type.
+-->We do not have char data type in python.
+-->To define multiline string literals we use triple quote symbols.
+-->If we want to use single or double quote symbol inside a string literal we can consider the string inside the triple quotes..
+------------------------------------------------------
+How to access characters from the string:
+-----------------------------------------
+1.by using index:
+-----------------
+s="durga"
+python supports both +ve and -ve index.
++ve index==>forward direction(Left to Right)
+-ve index==>backward direction(Right to Left)
+
+-5	-4	-3	-2	-1
+d	u	r	g	a
+0	1	2	3	4
+
+-->If we use the index not within the range we get string out of bound error.
+
+s='durga'
+print(s[0])
+print(s[-1])
+print(s[-5])
+print(s[15])
+
+s=input("Enter some string:")
+i=0
+for x in s:
+	print("The character present at positive index:{} and at negative index:{} is {}".format(i,i-len(s),x)
+----------------------------------
+2.by using slice operator
+-------------------------
+-->We can access by using slice operator.
+s[begin_index:end_index:step]
+-->s[0:7:1]
+
+-->from begin index to end-1 index and everytime increment by 1.
+
+s='0123456789'
+s[0:7:1]
+#'0123456'
+--------------
+s[0:7:2]
+#'0246'
+-----------------------------------
+-->The default value for step is 1.
+s[0:7]#'0123456'
+---------------------------------------------
+-->end index is always the end of the string.
+s[0:]#0123456789
+----------------
+-->default begin value is 0 and end value is length..
+s[::]#'0123456789'
+-----------------------------------------------------
+-->If the step value is negative then the right to left moment will happen.
+s[::-1]
+---------------------------------------------------------------------------
+step value can be either -ve or +ve
+if +ve then it sld be forward direction(Left to Right).
+if -ve then it sld be backward direction(Right to Left).
+
+If +ve forward direction from begin to end-1
+If -ve backward diection from begin to end+1
+--------------------------------------------
+s='0123456789'
+
+s[2:8:1]#2 to 7
+s[2:8:-1]#''(No subString in the specified range..).
+----------------------------------------------------
+s[2:8:0]#Slice step cannot be Zero.
+-----------------------------------
+s[-1:-6:-1]
+backward direction
+-1 to -6+1==>-1 to -5
+
+-10	-9	-8	-7	-6	-5	-4	-3	-2	-1
+0	1	2	3	4	5	6	7	8	9
+
+#98765
+---------------------------------------------------------------------------
+s[2:-5:1]
+
+2 to -5-1
+2 to -6
+
+begin to end-1
+#234
+---------------------------------------------------------------------------
+s[1:6:-2]	#BackWard direction begin to end+1
+1 to 7
+#''(Empty String)
+---------------------------------------------------------------------------
+s[0:-5:-5]
+backward
+begin to end+1
+0 to -5+1
+0 to -4
+
+#''
+
+s[:0:-1]
+default value for begin:0
+default value for end:length of the string
+default value for step:1
+
+default value for begin index:[-1]
+default value for end index:-(length of string+1)[]
+---------------------------------------------------------------------------
+s[-1::-1]
+begin to end+1
+-1 to -(5+1)
+-1 to -6
+---------------------------------------------------------------------------
+s='0 1 2 3 4 5 6 7 8 9'
+
+s[:0:-1]
+
+-ve==>backward 
+-1 to 0+1
+-1 to 1
+9 8 7 6 5 4 3 2 1
+-----------------
+s[-5:0:-9]#5
+
+s[2:-1:-1]
+---------------------------------------------------------------------------
+class 23:
+---------
+-->Mathematical Operators:
+--------------------------
++,*
+
+-->'durga'+'soft'
+-->'durgasoft'
+
+-->'durga'+10	#Error..
+------------------------
+* String repetition operator.
+>>"durga"*5	#'durgadurgadurgadurgadurga'
+>>5*'durga'	#'durgadurgadurgadurgadurga'
+
+-->len(s)=In built function to find the length of the string.
+len('Durga')-5
+
+-->Write a programto access each character of string in forward direction and backward direction.
+
+s[:]/s[::] forward direction
+s[::-1]	   backward direction
+-----------------------------
+using while loop
+
+s=input("Enter some String:")
+n=len(s)
+i=0
+print("Data In Forward Direction.")
+while i<n:
+	print(s[i],end=' ')
+	i=i+1
+print()
+print("Data In Backward Direction.")
+i=n-1
+while i>=0:
+	print(s[i],end=' ')
+	i=i-1
+print()
+while i>=-1:
+	print(s[i],end=' ')
+	i=i-1
+--------------------------------------
+1.Write a program to remove duplicate characters from the string.
+mississippi.
+
+2.each character how many times it is processing
+m==>1
+i==>4
+s==>4
+p==>2
+
+3.Durga Software Solutions
+
+Reverse: agruD erawtfoS snoituloS.
+----------------------------------
+Membership operators:
+---------------------
+in and not in
+
+s='durga'
+print('d' in s)
+print('d' not in s)
+---------------------------------------------------------------------------
+-->Write a program to read String and print whether the String has substrings or not.
+
+s=input("Enter Main String:")
+subs = input("Enter Substring to search:")
+if subs in s:
+	print(subs," is found in Main String")
+else:
+	print(subs," is not found in Main String")
+---------------------------------------------------
+Comparision operators for string:
+>,>=,<,<=
+equality operators for string:
+==,!=
+-->These operators check alphabetical order or unicode.
+a-97
+A-65
+
+Program for comparision of whether the two string.
+
+s1=input("Enter String 1: ")#'durga'
+s2=input("Enter String 2: ")#'naseer'
+
+if s1==s2:
+	print("Both Strings are equal.")
+elif s1<s2:
+	print("String 2 is greater than String 1.")
+else:
+	print("String 1 is greater than String 2.") 
+
+
+-->In general == operator is meant for content comparision.
+--> is operator meant for reference comparision.
+unicode.org==>For the purpose of unicodes.
+-----------------------------------------------------------
+== operator and is operator.
+
+a==b-->Content comparision.
+a is b-->reference comparision.
+
+l1=["A","B","C"]
+l2=["A","B","C"]
+
+l1 is l2
+l1==l2
+
+objects are different so Answer is False
+True
+
+-->Only fundamental datatypes are immutable.
+--------------------------------------------
+strip():this remove spaces.[lstrip(),rstrip(),strip()].
+
+
+city= input("Enter City Name: ")
+
+list=["Hyderabad","Delhi","Mumbai","Bangalore"]
+if city.strip() in list:
+	print("Your city is available and CCC are XXX")
+else:
+	print("Plz enter valid city name.")
+--------------------------------------------------------
+s=input("Enter Main String")
+subs=input("Enter substring")
+flag=False
+pos=-1
+n=len(s)
+count=0
+while True:
+	pos=s.find(subs,pos+1,n)
+	if pos==-1:
+		break
+	print("Found at index:",pos)
+	flag=True
+	count+=1
+if flag==False:
+	print("Not Found")
+print("No of Occurences:",count)
+---------------------------------------------------------------------------
+Class:24
+--------
+-->'abababa'
+'ab'
+
+s.find('ab')==>0
+s.count('ab')-->3
+
+Regular Expressions:
+--------------------
+Found at position:0
+Found at position:2
+Found at position:4
+
+
+-->find method behaviour:If a specified substring is present it will return index of first occurence..
+-->If the specified string is not present we get -1.
+
+-->To display index of every occurence.
+---------------------------------------
+s=input("Enter main String: ")
+sub=input("Enter the substring")
+l=len(s)
+i=s.find(sub)
+if i==-1:
+	print(subs,'not found in the given string')
+count=0
+while i!= -1:
+	print(sub,'present at index:',i)
+	i=s.find(sub,i+len(sub),l)
+	count=count+1
+print("No of Occurences:",count)#s.count(sub)
+---------------------------------------------
+-->find method works from left to right only.
+----------------------------------------------
+Replace One String with another String.
+---------------------------------------
+s.replace(oldstring,newstring)
+
+s='Learning Python is very difficult'
+s1=s.replace('difficult','easy')
+------------------------------------
+s='ababababa'
+print(id(s))
+s1=s.replace('a','b')
+print(s1)
+print(id(s1))
+---------------------------
+string object are immutable.
+If we are trying to change the content then a new object will be created with those changes.
+
+s='ababababa'
+print(id(s))
+print(s.replace('a','b'))
+-------------------------
+s='ababababa'
+s=s.replace('a','b')
+--------------------
+s='python is easy but java is difficult'
+s=s.replace('')
+
+splitting of string:[split()]
+--------------------
+'durga software solutions'
+
+s='durga software solutions'
+list = s.split()	[w.r.t space split is performed.]
+for s1 in list:
+	print(s1)
+----------------------------
+s='01-06-2018'
+li = s.split('-')
+for s1 in li:
+	print(s1)
+#01 06 2018
+----------------------------
+joining of strings:
+-------------------
+s=separator.join(list or tuple)
+
+list=['sunny','bunny','chinny','vinny']
+s='-'.join(list)
+
+#sunny-bunny-chinny-vinny
+----------------------------------------
+changing case of string:
+------------------------
+1.upper()
+2.lower()
+3.swapcase()
+5.title()
+6.capitalize()
+
+Learning Python Is Very Easy.[titlecase]
+Learning python is very easy.[capitalcase]
+
+s='learning python is very easy'.
+print(s.upper())
+print(s.lower())
+print(s.swapcase())
+print(s.title())
+print(s.capitalize())
+--------------------------------
+s='Learning Python Is Very Easy'
+s=s.lower().replace(' ','')
+print(s)
+--------------------------------
+s='Learning Python Is Very Easy'
+l=s.lower().split()
+print(s)
+s=''.join(l)
+--------------------------------
+Checking starting and ending with the string:
+---------------------------------------------
+s.startswith(substring)
+s.endswith(substring)
+
+s='Learning Python Is Very Easy'
+print(s.startswith('Learning'))
+print(s.endswith('Learning'))
+--------------------------------
+To check type of characters present in the given string:
+--------------------------------------------------------
+s.isalnum()==>a-z,A-Z,0-9
+isalpha()
+isDigit()
+isLower()
+isUpper()
+istitle()
+isspace()
+
+print('Durga786'.isalnum())#True.
+print('Durga786'.isalpha())#False
+print('Durga'.isalpha())#True
+print('7865'.isdigit())#True
+print('abc'.isupper())#False
+print('Learning Python Is Very Easy'.istitle())#True
+print('         '.isspace())
+---------------------------------------------------------------------------
+Class:25
+--------
+-->find(substring)
+-->index()
+-->rfind()
+-->rindex()
+----------------------------------------
+counting substring in the given String:
+----------------------------------------
+s.count(substring)
+
+s='durgasoft'
+s.count("soft")
+-----------------------------------------
+s.count(substring,begin,end)
+from begin index to end-1 index how many times substring came.
+
+s='durgasoftdurgasoft'
+print(s.count('soft'))
+print(s.count('soft',8,len(s)))
+-----------------------------------------
+s='ababbbbbbbbbbbbbbaaaaaaaaaaaabbbbbbbb'
+print(s.count('ab'))
+print(s.count('ab',18,len(s)))
+------------------------------
+0 to 4 
+s.count('a',0,5)
+----------------
+How we can differentiate sep='' and s.split()
+print(x,y,z,a)//sep attribute is dependent on print statement while split function depends on String..
+-------------------------------------------------------------------------
+s.upper()
+s.lower()
+---------
+equals()
+equalsIgnoreCase()-Not present in Python
+----------------------------------------
+==operator
+
+s1 and s2
+s1==s2	-->	Including Case
+s1.lower() == s2.lower()
+s1.upper() == s2.upper()
+//For the casesensitive.
+------------------------------
+username==>not case sensitive.
+pwd==>always case sensitive.
+------------------------------
+name= input('Enter User Name:')
+pwd=input('Enter Password:')
+if name.lower() =='durga' and pwd == 'python':
+	print('valid user and you will get all services')
+else:
+	print('Invalid user..plz login again')
+---------------------------------------------------------
+To Check type of characters present in a string:
+------------------------------------------------
+isalnum()==>{a-z,A-Z,0-9}
+isalpha()==>only alphabet symbols
+isdigit()
+islowercase()
+isupper()
+istitle()
+isspace()
+---------
+print('Durga786'.isalnum())//True
+print('Durga786'.isalpha())//False
+print('durga'.islower())//True
+print('durga'.isalpha())//True
+print('durga'.isupper())//False
+print('Durga Software Solutions'.istitle())//True
+print('            '.isspace())//True
+-------------------------------------------------
+Enter a Character from the Keyboard.
+	is it alpha numeric or not
+		is it alpha or not
+			is it lower or upper
+		is is digit
+	is it space
+	special character.
+--------------------------------------------------
+s=input('Enter Some Character:')
+if s.isalnum():
+	print('It is alpha numeric character')
+	if s.isalpha():
+		print('It is alphabet Character')
+		if s.lower():
+			print('It is lower case alphabet character')
+		else:
+			print('It is upper case alphabet character')
+	else:
+		print('It is a digit')
+elif s.isspace():
+	print('It is space character')
+else:
+	print('It is special character')
+--------------------------------------------------------------------
+Formatting the Strings:
+-----------------------
+replacement operator and format()
+
+name='durga'
+salary=10000
+age=68
+//durga's salary is 10000 and his age is 68.
+print('{}'s salary us {} and his age is {}.'.format(name,salary,age))
+print('{2}'s salary us {1} and his age is {0}.'.format(age,salary,name))
+print('{x}'s salary us {y} and his age is {z}.'.format(z=age,y=salary,x=name))
+-------------------------------------------------------------------------
+q1.Write a program to reverse given string?
+-------------------------------------------
+s= input('Enter Some String')
+print(s[::-1])
+--------------------------------------------
+s= input('Enter Some String')
+print(''.join(reversed(s)))
+--------------------------------------------
+s=input('Enter some string to reverse:')
+durga
+
+len(s)==>5
+first character:0
+last character: 4==>len-1
+--------------------------------------------
+s=input('Enter some string to reverse:')
+i=len(s)-1
+output=''
+while i>=0:
+	output=output+s[i]
+	i-=1
+print(output)
+--------------------------------------------
+Program to reverse order of words:
+----------------------------------
+input: Learning Python Is very Easy!!!
+output: Easy!! very Is Python Learning
+
+l=input('Enter the Sentence:').split()
+l1=[]#creation of empty list to hold words in reverse order
+i=len(l)-1
+while i>0:
+	l1.append(l[i])
+	i=i-1
+print(' '.join(l1))
+----------------------------------------
+l=input("Enter the Sentence: ").split()
+print(' '.join(l[::-1]))
+----------------------------------------------
+Program to reverse internal contents of each word:
+--------------------------------------------------
+durga software solutions
+
+agrud erawtfos snoitulos
+------------------------
+l=input("Enter The Sentence: ").split()
+li=[]
+for i in l:
+    li.append(l[::-1])
+print(' '.join(li[::-1]))
+---------------------------------------------------------------------------Class 26:
+---------
+String:
+-------
+reverse.
+reverse order of words.
+The internal content of each word should be reversed.
+
+
+Write a program to print characters at odd positions and even position for the given String.
+
+durgasoft
+even: d,r a...
+odd: u,g,s,f..
+
+s=input("Enter the Word: ")
+even=[]
+odd=[]
+for i in range(len(s)):
+    if i%2==0:
+        even.append(s[i])
+    else:
+        odd.append(s[i])
+print(even)
+print(odd)
+----------------------------
+print(s[::2])
+print(s[1::2])
+----------------------------
+s1='RAVI'
+s2='TEJA'
+
+output:'RTAEVJIA'	s1+s2
+Merge Should be done alternatively..This works only when the Strings are of same length..
+
+s1=input('Enter First String: ')
+s2=input('Enter Second String: ')
+output=''
+i,j=0,0
+while i<len(s1) or j<len(s2):
+	output=output+s1[i]+s2[j]
+	i+=1
+	j+=1
+print(output)
+-------------------------------------
+s1=input('Enter First String: ')
+s2=input('Enter Second String: ')
+output=''
+i,j=0,0
+while i<len(s1) or j<len(s2):
+	if i<len(s1):
+		output=output+s1[i]
+		i+=1
+	if j<len(s2):
+		output=output+s2[j]
+		j+=1
+print(output)
+//Code works for the strings with different lengths.
+----------------------------------------------------
+B4A1D3
+
+BAD
+413
+
+Write a Program Which will separate alphabets and digits.And Sort the String
+
+sorted()
+
+
+s=input('Enter Any String of alpha numeric characters: ')
+s1=s2=output=''
+
+for x in s:
+	if x.isalpha():
+		s1=s1+x
+	else:
+		s2=s2+x
+
+for x in sorted(s1):
+	output+=x
+
+for x in sorted(s2):
+	output+=x
+
+print(output)
+------------------------
+INPUT: a4b3c2
+OUTPUT: aaaabbbcc
+
+s=input('Enter Some String in the specified Format:')
+output=''
+for x in s:
+	if x.isalpha():
+		char=x
+	else:
+		output+=char*int(x)
+print(output)
+//Try to write sorted way of alphabets..
+a4k3b2//aeknbd
+---------------------------------------------------------------------------
+Class 27:
+---------
+String based applications also discussed in the last classes..
+
+a4k3b2//aeknbd
+ord(char)
+chr(104)
+
+s=input("Enter Some String: ")
+output=''
+for x in s:
+	if x.isalpha():
+		output=output+x
+		previous=x
+	else:
+		newch=chr(ord(previous)+int(x))
+		output+=newch
+print(output)
+-------------------------------------------
+Requirement Gathering
+Requirement Analysis
+Designing
+Coding
+Testing
+-------------------------------------------
+inputs:
+s1=RAVI
+s2=TEJA
+
+output: RTAEVJIA
+---------------------------------------------------------------------------
+Class 28:
+---------
+To remove duplicates present in the string.
+input:ABCABCABCABCABACABABACBABAC
+output:ABCD
+
+s=input("Enter Some String: ")
+l=[]
+for x in s:
+	if x not in l:
+		l.append(x)
+print(''.join(l))
+--------------------------------------------
+s=input("Enter Some String: ")
+print(''.join(s))#Order is not present.
+--------------------------------------------
+Find Number of Occurences of each character.
+input:ABCABCABCABCAB
+
+output:
+A-->5
+B-->5
+C-->4
+
+d={K:V,k:v}
+-----------
+d={100:'durga',200:'Vishwa'}
+print(d.keys())
+for k,v in d.items():
+	print("{}={}".format(k,v))
+d[300]='shiva'
+-----------------------------------
+s=input("Enter Some String: ")
+d={}
+for x in s:
+	if x not in d.keys():
+		d[x]=1
+	else:
+		d[x]=d[x]+1
+for k,v in d.items():
+	print("{}={}".format(k,v))
+---------------------------------------------------------------------------
+Collection:
+-----------
+-->A group of object holds as a single entity is collection.
+While representing these grup of obj we might get n number of req..
+duplicates are allowed,not allowed,insertion order preserved,not preserved.
+
+We have multiple features required..
+
+
+List
+Tuple
+Set
+Dict
+
+List Data Structure
+-------------------
+1.Insertion order is Preserved..[In which order we kept in the same order it is stored in the memory..]
+2.Duplicate objects are allowed..
+3.Heterogenous Objects[Different Objects are Allowed.]
+4.Growable.
+5.Representation.By using [] notation.
+6.[10,20,30,10]	Indexing is Allowed in List,Which will play crucial role.
+   0   1  2  3
+7.+ve Indexing[forward] and -ve Indexing[Backward] is Allowed Slicing is Allowed..
+
+
+Creation Of List Objects
+------------------------
+1.Empty List
+------------
+l=[]
+print(l)
+print(type(l))
+---------------
+2.If we know the List Elements Already
+--------------------------------------
+l=[10,20,30,40]
+print(l)
+---------------
+3.With Dynamic Input
+--------------------
+l=eval(input("Enter Some List:"))
+print(l)#[10,20,30]
+#['Durga','Ravi']
+----------------------------------
+4.With list() function:
+-----------------------
+l=list(range(0,10,2))
+print(l)
+-----------------------
+s='durga'
+l=list(s)
+print(l)
+---------
+5.split() function
+------------------
+s='Learning Python is very easy'
+l=s.split()
+print(l)
+print(type(l))
+--------------------------------------
+l=[10,20,[30,40]]	(Nested Lists)
+--------------------------------------
+Accessing elements of a List:
+-----------------------------
+By using index
+or by using slice operator.
+-4	-3	-2	-1			
+10	20	30	40
+0	1	2	3
+
+l=[10,20,30,40]
+print(l[0])
+print(l[-1])
+---------------------------------------------------------------
+If We access index outside we get index out of range exception.
+----------------------------------------------------------------
+l=[10,20,[30,40]]
+print(l[2][1])
+-----------------
+list[begin:end:step]
+
+step can be either positive or negative.
+----------------------------------------
+default value for step is 1
+l=[10,20,30,40,50,50,60,70,80]
+print(l[::])
+print(l[::2])
+print(l[::-1])
+-----------------------------------------
+List Vs Immutability:
+---------------------
+List is mutable.
+l=[10,20,30]
+l[1]=7777
+print(l)
+---------------------------------------------------------------------------
+class 29:
+---------
+How insertion order is Preserved?[indexing]
+
+l=[]
+l=[10,20,30,40]
+l=eval(input("Enter Some List:"))
+l=list(sequence)
+l=s.split(separator)
+
+Nested Lists
+----------------------------------------------
+Traversing the elements of List:
+--------------------------------
+Access all elements while for..
+len()-length function..
+
+By using while loop:
+--------------------
+list=[1,2,3,4,5,6,345,7,8]
+i=0
+while(i<len(l)):
+	print(l[i])
+	i+=1
+---------------------------
+By using for loop:
+-------------------
+list=[1,2,3,4,5,6,345,7,8]
+for i in list:
+	print(i)
+---------------------------
+list=[1,2,3,4,5,6,7,8,9]
+for x in list:
+	if x%2==0:
+		print(x)
+---------------------------
+list=[1,2,3,4,5]
+1 is available at postive index 0 and negative index -5
+for i in range(len(list)):
+	print("{} is available at positive index {} and negative index {}".format(list[i],i,i-len(list))
+-----------------------------------------------------------------------
+Important functions of List:
+----------------------------
+def f1():
+	print("Hello This is function")#Functional Programming[Function]
+class Student:
+	def info(self):
+		print("It is method and dont get confuse")[Method.]
+f1()
+s=Student()
+s.info()
+-------------------------------------------------------------------------
+Python is Functional and OOPs language.
+To get information of the list:
+-------------------------------
+1.len(list)#No of objects/characters present will be printed.
+l=[1,2,3,4]
+print(len(l))
+------------------------------------------------------------
+2.count(x)#Number of occurences of each variable in the list.
+l=[10,20,30,40,50,10,20,10]
+print(l.count(10))#3
+-------------------------------------------------------------
+3.index(x) #index of first occurence will be printed.
+l=[10,20,30,40,50,10,20,10]
+print(l.index(10))#0
+print(l.index(60))#ValueError
+
+l=[10,20,30,40,10,20,10,10]
+target=int(input("Enter the value to search:"))
+if target in l:
+	print(target,"available and its first occurence is at:",l.index(target))
+else:
+	print("Not available in the List.")
+------------------------------------------------------------
+try:
+	print(target,"available and its first occurence is at:",l.index(target))
+expect ValueError:
+	print(target,"Not available in the List.")
+--------------------------------------------------------------
+Manuipulating elements of List:
+-------------------------------
+l.append(element):It is gng to add elements at last..
+
+l=[]
+l.append(10)
+l.append(20)
+l.append(30)
+l.append(40)
+l.append(50)
+
+To add all elements to list upto 100 which are divisible by 10
+
+l=[]
+for x in range(101):
+	if x%10==0:
+		l.append(x)
+print(l)
+---------------------------
+l=[]
+for x in range(0,101,2):
+	l.append(x)
+print(l)
+---------------------------
+2.insert():
+-----------
+l.insert(index,element)
+
+l=[]
+l.append(10)
+l.append(20)
+l.append(30)
+l.append(40)
+l.append(50)
+print(l)
+l.insert(1,50)
+print(l)
+
+if index is greater than max index then the element will be added at the end and viceversa.
+l.insert(50,777)
+l.insert(-10,9999)
+---------------------------
+3.extend():#This will add all the elements of l2 to l1.
+-----------
+l1=['Chicken','Mutton','Fish']
+l2=['KF','RC','FO']
+
+l1.extend(l2)
+---------------------------------------------------------------------------Class 30:
+---------
+List:
+-----
+len(l)
+count(x)
+index(x) chk before else we get error.
+-------------------------------------
+append(x)
+insert(index,x)
+extend(l1) add elements of one list to other list
+-------------------------------------------------
+l1=[10,20,30]
+l2=[40,50,60]
+l1.extend(l2)
+l1.extend('durga')//Adds separately 'd','u','r','g','a'
+l1.append("durga")
+print(l1)
+------------------
+remove() function:To remove Specified element.
+------------------
+l1=[10,20,30]
+l1.remove(20)
+print(l1)#[10,30]#If Not present we get Value Error.
+----------------------------------------------------
+l1=[10,20,30,40,50,60,70]
+x=int(input("Enter Element to be removed:"))
+if x in l1:
+	l1.remove(x)
+	print("Removed Successfully.")
+	print(l1)
+else:
+	print("Specified element is not available.")
+----------------------------------------------------
+pop() function:To remove last inserted element and return it.
+---------------
+-->(top most element).
+l1=[10,20,30,40,50,60,70]
+print(l1.pop())#70
+print(l1.pop())#60
+print(l1)#10,20,30,40,50
+#When we pop from empty list we get Index Error.
+#if len ==0 print no elements..
+------------------------------------------------
+pop(index)-To remove at the specified index.
+
+l1=[10,20,30,40,50,60,70]
+print(l1.pop(2))#30
+print(l1.pop(10))#pop index out of range.
+print(l1)
+------------------------------------------
+remove()			pop()
+--------			-----
+specified element		to remove and return last element to 					specified index.
+---------------------------------------------------------------------
+This method won't return 	removed element.
+anything.	
+---------------------------------------------------------------------
+ValueError.			IndexError.
+---------------------------------------------------------------------
+List Objects are Dynamic:
+-------------------------
+based on requirment we can increase or decrease the size.
+
+append(),insert(),extend()==>To increase size.
+remove(),pop()==>To decrease the size.
+----------------------------------------------------------
+Ordering elements of list:
+--------------------------
+1.reverse():To reverse the elements of the list.
+
+l1=[1,2,3,4,5]
+print("reversed list is: ",l1.reverse())
+#[5,4,3,2,1]
+----------------------------------------
+2.sort():
+According to default natural sorting order===>
+numbers==>Ascending order.
+String obj==>Alphabetical order.
+
+l1=[20,5,15,10,0]
+l1.sort()
+print(l1)#[0,5,10,15,20]
+------------------------
+l1=["Boy","Dog","Cat","Apple"]#Alphabetical Order..
+l1.sort()
+print(l1)#["Apple","Boy","Cat","Dog"]
+-------------------------------------
+Upper comes first in UniCode.
+-------------------------------------
+l1=[20,10,"apple","Cat"]
+l1.sort()
+print(l1)#TypeError.For sort method we need to use homogenous data alone.
+-------------------------------------------------------------------------
+l1=["10","20","ravi","durga"]
+l1.sort()
+print(l1)
+#['10','20','durga','ravi']
+-----------------------------
+l1=[20,'A',10,'B',5,'D']
+l1.sort()
+print(l1)#TypeError(Python 3).[5,10,20,'A','B','C','D'](Python 2)
+-----------------------------------------------------------------
+To Sort in reverse of alphabetical order:
+-----------------------------------------
+sort(reverse(list))
+reverse(sort(list))
+
+l1=[20,5,15,10,0]
+l1.sort(reverse=True)
+print(l1)
+-----------------------
+l1=['Dog','Cat','Lion']
+l1.sort(reverse=True)
+print(l1)
+-----------------------
+x=[10,20,30,40]
+y=x	#Aliasing(Not recommended)
+print(id(x))
+print(id(y))
+y.reverse()
+print(x==y)	#False
+-----------------------
+shallow copy
+
+deep copy
+---------
+1.By Using Slice Operator.
+2.By using Copy Function.
+
+x=[10,20,30,40]
+y=x[:]	#Creation of duplicate object using slice operator.
+#y=x.copy()
+y[1]=777
+print(x)
+print(id(x))
+print(id(y))
+----------------------------
+Difference Between = operator and copy() method
+y=x#Aliasing
+y=x.copy()#Cloning
+-------------------
+Using Mathematical Operators for List Object.
+---------------------------------------------
+Mathematical Operators:
+-----------------------
++==>Concatenation
+*
+
+a=[10,20,30,40]
+b=[50,60,70,80]
+c=a+b
+print(a)
+print(b)
+print(c)
+------------------------
+a=[10,20,30,40]
+c=a+[40]
+------------------------
+a=[10,20,30,40]
+c=a*2
+print(c)
+---------------------------------------------------------------------------
+Class 31:
+---------
+remove():To remove specified element..
+pop():To remove and return element..
+reverse():
+sort():Natural Order with the unicode values.
+
+l=[20,0,15,5,10]
+l.sort(reverse = True)
+print(l)
+----------------------
+aliasing==>reference assigned to other variable.
+copy==>cloning.
+
++ operator==>Both should be list objects
+* ==>list*3
+
+Comparing List Objects:
+-----------------------
+x=['Dog','Cat','Rat']
+y=['Dog','Cat','Rat']
+z=['DOG','CAT','RAT']
+
+print(x==y)#True
+print(x==z)#False
+print(x!=z)#True
+
+Comparing :
+1.The number of elements must be equal.
+2.The order should be same
+3.The contents should be same(including same..)
+
+print()
