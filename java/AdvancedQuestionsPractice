@@ -1,11 +1,68 @@
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.function.*;
+
+class Emp {
+  int id;
+  String name;
+  String dept;     // can be null in some questions
+  String role;
+  double salary;
+  List<String> skills;
+
+  Emp(int id, String name, String dept, String role, double salary, List<String> skills) {
+    this.id = id; this.name = name; this.dept = dept; this.role = role; this.salary = salary; this.skills = skills;
+  }
+  int getId(){ return id; }
+  String getName(){ return name; }
+  String getDept(){ return dept; }
+  String getRole(){ return role; }
+  double getSalary(){ return salary; }
+  List<String> getSkills(){ return skills; }
+}
+
+
 class Main {
-    
     public static void main(String[] args) {
-        List<Integer> nums = Arrays.asList(50,60,70,10,20,30);
         
-        // Top 3 highest numbers
+        List<Integer> nums = Arrays.asList(10,50,20,50,40,40,5);
         
-        nums.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+        // Top 3 highest numbers (with duplicates vs distinct)
+        // Stream the list of elements and sort in reverse order and limit 3 values and use for loop to print values.
+        nums.stream().distinct().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+        
+        // 3rd highest salary (with ties vs without ties)
+        // With ties means duplicates allowed
+        // Without ties means unique values
+        long highestSal = nums.stream().distinct().sorted(Comparator.reverseOrder()).skip(2).findFirst().orElse(null);
+        System.out.println(highestSal);
+        
+        // id, name, dept, role, salary, List<String> skills;
+        List<Emp> employeesList = Arrays.asList(
+            new Emp(101,"Vishwa","Backend","Java Developer",105000,Arrays.asList("Java","SQL","AWS")),
+            new Emp(102,"Sumanth","DevOps","DevOps Engineer",125000,Arrays.asList("Java","SQL","AWS","Angular")),
+            new Emp(103,"Jyothi","Backend",".NET developer",105000,Arrays.asList(".NET","SQL","GCP","Angular")),
+            new Emp(104,"Tilak","Frontend","React Developer",95000,Arrays.asList("React","TypeScript","AWS","Angular")),
+            new Emp(105,"Ramesh","Database","SQL Developer",95000,Arrays.asList("SQL","Db Administration"))
+            );
+        
+        // With ties
+        System.out.println(employeesList.stream().map(Emp::getSalary).distinct().sorted(Comparator.reverseOrder()).skip(2).findFirst().orElse(null));
+        
+        // Without ties
+        Emp e = employeesList.stream().sorted(Comparator.comparingDouble(Emp::getSalary).reversed()).skip(2).findFirst().orElse(null);
+        System.out.println(e.getSalary());
+        
+        // Sort by dept asc then salary desc
+        employeesList
+        .stream()
+        .sorted(Comparator.comparing(Emp::getDept).thenComparing(Comparator.comparingDouble(Emp::getSalary).reversed())).forEach(emp->System.out.println(emp.getName()));
+        
+        employeesList
+        .stream()
+        .sorted(Comparator.comparing(Emp::getDept).thenComparing(Comparator.comparingDouble(Emp::getSalary).reversed())).map(emp->emp.getName()).forEach(System.out::println);
+        
+        // Bottom 5 efficiently
         
         
     }
